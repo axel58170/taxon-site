@@ -43,11 +43,18 @@ class PageParser(HTMLParser):
                 self.motion_fallbacks.append(values)
 
 
-def output_path_for_reference(site: Path, page: Path, reference: str) -> tuple[Path, str]:
+def output_path_for_reference(
+    site: Path, page: Path, reference: str, base_path: str = ""
+) -> tuple[Path, str]:
     parsed = urlsplit(reference)
     fragment = unquote(parsed.fragment)
     raw_path = unquote(parsed.path)
     if raw_path.startswith("/"):
+        normalized_base_path = "/" + base_path.strip("/") if base_path.strip("/") else ""
+        if normalized_base_path and (
+            raw_path == normalized_base_path or raw_path.startswith(f"{normalized_base_path}/")
+        ):
+            raw_path = raw_path[len(normalized_base_path) :] or "/"
         candidate = site / raw_path.lstrip("/")
     elif raw_path:
         candidate = page.parent / raw_path
@@ -65,7 +72,7 @@ def parse_page(path: Path) -> PageParser:
     return parser
 
 
-def validate(site: Path) -> list[str]:
+def validate(site: Path, base_path: str = "") -> list[str]:
     site = site.resolve()
     errors: list[str] = []
     pages: dict[Path, PageParser] = {}
@@ -94,7 +101,7 @@ def validate(site: Path) -> list[str]:
             parsed = urlsplit(reference)
             if parsed.scheme.lower() in ignored_schemes or reference.startswith("//"):
                 continue
-            target, fragment = output_path_for_reference(site, page, reference)
+            target, fragment = output_path_for_reference(site, page, reference, base_path)
             try:
                 target.relative_to(site)
             except ValueError:
@@ -142,12 +149,17 @@ def validate(site: Path) -> list[str]:
 def main() -> int:
     argument_parser = argparse.ArgumentParser()
     argument_parser.add_argument("site", type=Path, help="generated Jekyll output directory")
+    argument_parser.add_argument(
+        "--base-path",
+        default="",
+        help="URL path prefix used by GitHub Pages, such as /taxon-site",
+    )
     arguments = argument_parser.parse_args()
     site = arguments.site.resolve()
     if not site.is_dir():
         argument_parser.error(f"generated site directory does not exist: {site}")
 
-    errors = validate(site)
+    errors = validate(site, arguments.base_path)
     if errors:
         print("Website validation failed:")
         for error in errors:

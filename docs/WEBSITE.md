@@ -54,6 +54,10 @@ container run --rm \
 python3 scripts/validate_site.py _site
 ```
 
+For a project-site build whose generated URLs start with `/taxon-site`, pass
+`--base-path /taxon-site`. The Pages workflow obtains this value automatically
+from `actions/configure-pages`.
+
 The validator requires the three public routes, stable support-page anchors,
 valid internal links and assets, and accessible animated demonstrations with
 reduced-motion fallbacks. `_site/` is generated output and should not be

@@ -47,6 +47,16 @@ class GeneratedSiteValidationTests(unittest.TestCase):
     def test_accepts_complete_generated_site(self) -> None:
         self.assertEqual(validate(self.site), [])
 
+    def test_accepts_absolute_links_with_project_site_base_path(self) -> None:
+        (self.site / "index.html").write_text(
+            '<main id="main"><a href="/taxon-site/support/#which-languages-can-i-add">FAQ</a>'
+            '<img class="motion-demo" src="/taxon-site/assets/demo.gif" alt="Animated steps">'
+            '<img class="motion-fallback" src="/taxon-site/assets/poster.webp" alt="Still result"></main>',
+            encoding="utf-8",
+        )
+
+        self.assertEqual(validate(self.site, "/taxon-site"), [])
+
     def test_reports_broken_contract_and_accessibility(self) -> None:
         (self.site / "support/index.html").write_text('<main id="main"></main>', encoding="utf-8")
         (self.site / "assets/poster.webp").unlink()

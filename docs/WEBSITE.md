@@ -30,9 +30,8 @@ reaches `main` or the workflow is run manually. Configure GitHub Pages to use
 From the repository root on an Apple silicon Mac with macOS 26 or later, start
 [Apple Container](https://github.com/apple/container) and use the compatible
 GitHub Pages Jekyll builder image below. The image is Linux/AMD64, so this
-command enables Rosetta translation. The build's metadata plugin also needs a
-GitHub token; the command reads the existing GitHub CLI credential without
-printing or storing it:
+command enables Rosetta translation. It invokes Jekyll directly and does not
+pass GitHub credentials into the container:
 
 ```sh
 container system start
@@ -41,16 +40,9 @@ container run --rm \
   --rosetta \
   --volume "$PWD:/github/workspace" \
   --workdir /github/workspace \
-  --env GITHUB_WORKSPACE=/github/workspace \
-  --env INPUT_SOURCE=./website \
-  --env INPUT_DESTINATION=./_site \
-  --env INPUT_TOKEN="$(gh auth token)" \
-  --env GITHUB_REPOSITORY=axel58170/taxon-site \
-  --env INPUT_BUILD_REVISION=local \
-  --env GITHUB_API_URL=https://api.github.com \
-  --env INPUT_VERBOSE=true \
-  --env INPUT_FUTURE=false \
-  ghcr.io/actions/jekyll-build-pages:v1.0.13
+  --entrypoint /usr/local/bundle/bin/github-pages \
+  ghcr.io/actions/jekyll-build-pages:v1.0.13 \
+  build --source website --destination _site
 python3 scripts/validate_site.py _site
 ```
 

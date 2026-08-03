@@ -57,6 +57,19 @@ class GeneratedSiteValidationTests(unittest.TestCase):
 
         self.assertEqual(validate(self.site, "/taxon-site"), [])
 
+    def test_rejects_absolute_links_outside_project_site_base_path(self) -> None:
+        (self.site / "index.html").write_text(
+            '<main id="main"><a href="/support/#which-languages-can-i-add">FAQ</a>'
+            '<img class="motion-demo" src="/assets/demo.gif" alt="Animated steps">'
+            '<img class="motion-fallback" src="/assets/poster.webp" alt="Still result"></main>',
+            encoding="utf-8",
+        )
+
+        errors = validate(self.site, "/taxon-site")
+
+        self.assertEqual(len(errors), 3)
+        self.assertTrue(all("outside configured base path" in error for error in errors))
+
     def test_reports_broken_contract_and_accessibility(self) -> None:
         (self.site / "support/index.html").write_text('<main id="main"></main>', encoding="utf-8")
         (self.site / "assets/poster.webp").unlink()

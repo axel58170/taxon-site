@@ -20,6 +20,10 @@ REQUIRED_ANCHORS = {
 }
 
 
+class ReferenceOutsideBasePath(ValueError):
+    """A root-relative URL points outside the configured project site."""
+
+
 class PageParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
@@ -51,9 +55,12 @@ def output_path_for_reference(
     raw_path = unquote(parsed.path)
     if raw_path.startswith("/"):
         normalized_base_path = "/" + base_path.strip("/") if base_path.strip("/") else ""
-        if normalized_base_path and (
-            raw_path == normalized_base_path or raw_path.startswith(f"{normalized_base_path}/")
-        ):
+        if normalized_base_path:
+            if not (
+                raw_path == normalized_base_path
+                or raw_path.startswith(f"{normalized_base_path}/")
+            ):
+                raise ReferenceOutsideBasePath(reference)
             raw_path = raw_path[len(normalized_base_path) :] or "/"
         candidate = site / raw_path.lstrip("/")
     elif raw_path:
@@ -101,7 +108,13 @@ def validate(site: Path, base_path: str = "") -> list[str]:
             parsed = urlsplit(reference)
             if parsed.scheme.lower() in ignored_schemes or reference.startswith("//"):
                 continue
-            target, fragment = output_path_for_reference(site, page, reference, base_path)
+            try:
+                target, fragment = output_path_for_reference(site, page, reference, base_path)
+            except ReferenceOutsideBasePath:
+                errors.append(
+                    f"{route}: {attribute} points outside configured base path: {reference}"
+                )
+                continue
             try:
                 target.relative_to(site)
             except ValueError:

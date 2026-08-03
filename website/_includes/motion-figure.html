@@ -1,0 +1,5 @@
+<figure class="{{ include.class | escape }}">
+  <img class="motion-demo" src="{{ include.animation | relative_url }}" alt="{{ include.animation_alt | escape }}" width="402" height="874" loading="lazy">
+  <img class="motion-fallback" src="{{ include.poster | relative_url }}" alt="{{ include.poster_alt | escape }}" width="402" height="874" loading="lazy">
+  <figcaption>{{ include.caption | escape }}</figcaption>
+</figure>

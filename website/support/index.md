@@ -13,6 +13,7 @@ footer_link: privacy
 
 - **Private support:** Email [taxon@axelgraff.fr](mailto:taxon@axelgraff.fr).
 - **Public bug reports:** File an issue at [GitHub Issues](https://github.com/axel58170/taxon-site/issues).
+- **TestFlight participants:** Follow the [beta testing guide]({{ '/beta-testing/' | relative_url }}).
 
   <p class="note">Do not include private information, personal identifiers, confidential text, or screenshots containing sensitive content in a public issue.</p>
 

@@ -1,3 +1,4 @@
 /_site/
+/website/.jekyll-cache/
 __pycache__/
 *.py[cod]

@@ -3,7 +3,6 @@ layout: default
 title: Beta testing — Taxon Bridge
 description: A practical guide for testing Taxon Bridge on iPhone through TestFlight.
 document: true
-current_nav: support
 footer_link: privacy
 ---
 
@@ -45,10 +44,11 @@ to test the two behaviors separately.
    scientific name `Panthera leo`. Confirm the taxon and its available common
    names appear promptly. A Wikipedia link or image may be unavailable because
    those details normally come from the network.
-3. Still offline, search for a valid taxon that you have not previously used and
-   that is not in the bundled vocabulary. Record the query. Confirm Taxon Bridge
-   reports an understandable connection problem instead of hanging or showing
-   an unrelated result.
+3. Still offline, search for the non-bundled scientific name `Equus zebra`,
+   provided you have not previously used it on this installation. Confirm Taxon
+   Bridge reports an understandable connection problem instead of hanging or
+   showing an unrelated result. If you have used that name, record and use a
+   different non-bundled scientific name for the remaining steps.
 4. Disable Airplane Mode and retry that exact query. Confirm it resolves and
    appears in **Recent taxa**.
 5. Relaunch Taxon Bridge, enable Airplane Mode again, and repeat the query.

@@ -22,6 +22,7 @@ class GeneratedSiteValidationTests(unittest.TestCase):
         self.site = Path(self.temporary_directory.name)
         (self.site / "privacy").mkdir()
         (self.site / "support").mkdir()
+        (self.site / "beta-testing").mkdir()
         (self.site / "assets").mkdir()
         (self.site / "index.html").write_text(
             '<main id="main"><a href="support/#which-languages-can-i-add">FAQ</a>'
@@ -32,6 +33,9 @@ class GeneratedSiteValidationTests(unittest.TestCase):
         (self.site / "privacy/index.html").write_text('<main id="main"></main>', encoding="utf-8")
         (self.site / "support/index.html").write_text(
             f'<main id="main">{SUPPORT_ANCHORS}</main>', encoding="utf-8"
+        )
+        (self.site / "beta-testing/index.html").write_text(
+            '<main id="main"></main>', encoding="utf-8"
         )
         (self.site / "assets/site.css").write_text(
             "@media (prefers-reduced-motion: reduce) {"

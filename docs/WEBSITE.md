@@ -9,6 +9,7 @@ includes in that directory to generate the published HTML.
 - Product and marketing: <https://taxon.axelgraff.fr/>
 - Privacy policy: <https://taxon.axelgraff.fr/privacy/>
 - Support: <https://taxon.axelgraff.fr/support/>
+- Beta testing guide: <https://taxon.axelgraff.fr/beta-testing/>
 
 The GitHub project-site fallback is
 <https://axel58170.github.io/taxon-site/>.
@@ -50,7 +51,7 @@ For a project-site build whose generated URLs start with `/taxon-site`, pass
 `--base-path /taxon-site`. The Pages workflow obtains this value automatically
 from `actions/configure-pages`.
 
-The validator requires the three public routes, stable support-page anchors,
+The validator requires the four public routes, stable support-page anchors,
 valid internal links and assets, and accessible animated demonstrations with
 reduced-motion fallbacks. `_site/` is generated output and should not be
 committed.
@@ -69,6 +70,7 @@ After GitHub validates DNS and provisions the certificate, enable
 After every deployment:
 
 1. Confirm the Pages workflow succeeds on `main`.
-2. Open `/`, `/privacy/`, and `/support/` over HTTPS without authentication.
+2. Open `/`, `/privacy/`, `/support/`, and `/beta-testing/` over HTTPS without
+   authentication.
 3. Check navigation, the support email, media, and external links.
 4. Confirm the custom domain serves a valid HTTPS certificate.

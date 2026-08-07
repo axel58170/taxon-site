@@ -9,7 +9,12 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 
-REQUIRED_ROUTES = ("index.html", "privacy/index.html", "support/index.html")
+REQUIRED_ROUTES = (
+    "index.html",
+    "privacy/index.html",
+    "support/index.html",
+    "beta-testing/index.html",
+)
 REQUIRED_ANCHORS = {
     "support/index.html": {
         "apple-books-use-a-shortcut",

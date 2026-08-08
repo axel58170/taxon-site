@@ -77,6 +77,27 @@ There is no need to leave the identification behind or search for each name sepa
 
 </section>
 
+<section class="features-section" aria-labelledby="features-title">
+  <div class="features-heading" markdown="1">
+
+<p class="eyebrow">What Taxon Bridge does</p>
+
+## One lookup, a complete taxon view {#features-title}
+
+Taxon Bridge keeps identification and translation connected. Start with a name or a supported page, then move between sourced common names, scientific identity, and the apps you already use.
+
+  </div>
+
+  <ul class="feature-list">
+    <li><strong>Names in your languages</strong><span>Choose and order the languages you care about, then see their recorded common names together.</span></li>
+    <li><strong>Scientific identity</strong><span>Keep the scientific name and verified taxon identity visible as the shared point of reference.</span></li>
+    <li><strong>Share selected text</strong><span>Send a biological name from Safari, Notes, Mail, and other apps through the iPhone Share Sheet.</span></li>
+    <li><strong>Share a Wikipedia article</strong><span>Send a supported Wikipedia article—even one opened from Visual Intelligence—and resolve its linked taxon directly.</span></li>
+    <li><strong>Continue from Merlin</strong><span>Share a supported Merlin Bird ID species page without searching for the bird again.</span></li>
+    <li><strong>Shortcuts and Siri</strong><span>Resolve taxa, retrieve individual names, or show your configured names in personal automations.</span></li>
+  </ul>
+</section>
+
 <section class="beyond-birds" aria-labelledby="beyond-title" markdown="1">
 
 <p class="eyebrow">The whole living world</p>

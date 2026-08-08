@@ -11,7 +11,7 @@ description: Taxon Bridge shows the sourced names of animals, plants, and fungi 
 
 # One name, many languages. {#hero-title}
 
-<p class="lede">Enter one common or scientific name and instantly see what the same animal, plant, or fungus is called in all the languages you have chosen. Taxon Bridge gives you the complete multilingual picture at once, with the scientific name that connects them all.</p>
+<p class="lede">Enter a common or scientific name and see what that animal, plant, or fungus is called in all your selected languages.</p>
 
 <div class="actions">
   <a class="button" href="mailto:taxon@axelgraff.fr?subject=Taxon%20Bridge%20TestFlight">Ask about TestFlight</a>
@@ -25,32 +25,19 @@ description: Taxon Bridge shows the sourced names of animals, plants, and fungi 
 <section class="birding-story" aria-labelledby="birding-title">
   <div class="section-copy" markdown="1">
 
-<p class="eyebrow">Follow the bird, not the translation trail</p>
+## Birding across languages {#birding-title}
 
-## Built for multilingual birding {#birding-title}
-
-A bird may be reported under a local name, identified in Merlin in another language, and recorded in a list you keep in your own language. Taxon Bridge lets you move quickly between all of those names without losing track of the species.
-
-For birders doing a Big Year—or simply birding across borders—that means less time repeating searches and more time paying attention to the bird in front of you.
+See a bird name in French and want to know the Dutch or English name? Look it up in Taxon Bridge and see the translations straight away.
 
   </div>
-  <ol class="name-journey" aria-label="A species name moving between three contexts">
-    <li><span>Local report</span><strong>A name you encounter</strong></li>
-    <li><span>Merlin Bird ID</span><strong>A name used to identify it</strong></li>
-    <li><span>Your list</span><strong>A name in your own language</strong></li>
-  </ol>
 </section>
 
 <section class="workflow-section" aria-labelledby="share-title">
   <div class="workflow-copy" markdown="1">
 
-<p class="eyebrow">Stay in the flow</p>
+## Look up a species while reading {#share-title}
 
-## Look up a name from almost anywhere {#share-title}
-
-When you encounter a biological name in your browser, an email, or almost anywhere else you can select text, send it to Taxon Bridge through the Share Sheet. The names appear straight away, with as few taps as possible. Close the result when you are done and continue reading where you left off.
-
-The Share Sheet is not available everywhere—Apple Books is one notable exception. In those situations, you can use a [Shortcut instead]({{ '/support/#apple-books-use-a-shortcut' | relative_url }}) or run a Taxon Bridge Shortcut with Siri. You can also enter a name directly in the app when it comes up in a printed book or a conversation.
+See an unfamiliar animal, plant, or fungus in Safari, Mail, or another app? Select its name and send it to Taxon Bridge. The translations appear straight away. Close the pop-up when you are done and continue reading where you left off.
 
   </div>
 
@@ -61,13 +48,11 @@ The Share Sheet is not available everywhere—Apple Books is one notable excepti
 <section class="workflow-section workflow-section-reversed" aria-labelledby="merlin-title">
   <div class="workflow-copy" markdown="1">
 
-<p class="eyebrow">From Merlin Bird ID</p>
+## Look up a bird from Merlin {#merlin-title}
 
-## See a Merlin bird in your languages {#merlin-title}
+After identifying a bird with Merlin, send the species to Taxon Bridge to see its translations in your selected languages.
 
-The same Share Sheet workflow works particularly well with Merlin Bird ID. After Merlin identifies a bird, send its species page to Taxon Bridge and immediately see what that species is called in all your other chosen languages.
-
-Taxon Bridge opens over Merlin, so you can check the names and then close the result to stay where you were. There is no need to search for each name separately. The scientific name remains visible as the common point of reference.
+Taxon Bridge appears over Merlin. Close the pop-up when you are done and continue where you left off.
 
 <p class="note">Taxon Bridge is not affiliated with or endorsed by Merlin Bird ID, eBird, or the Cornell Lab of Ornithology.</p>
 
@@ -77,19 +62,36 @@ Taxon Bridge opens over Merlin, so you can check the names and then close the re
 
 </section>
 
-<section class="features-section" aria-labelledby="features-title">
-  <div class="features-heading" markdown="1">
+<section class="story-grid" aria-label="More ways to use Taxon Bridge">
+  <article class="short-story" aria-labelledby="wikipedia-title" markdown="1">
 
-<p class="eyebrow">What Taxon Bridge does</p>
+## Look up a species from Wikipedia {#wikipedia-title}
 
-## One lookup, a complete taxon view {#features-title}
+Reading about an animal, plant, or fungus on Wikipedia? Send the article to Taxon Bridge to see its translations in your selected languages.
 
-Taxon Bridge keeps identification and translation connected. Start with a name, a Wikipedia article about an organism, or a Merlin species page, then move between sourced common names, scientific identity, and the apps you already use.
+Taxon Bridge appears over Wikipedia. Close the pop-up when you are done and continue where you left off.
 
-  </div>
+  </article>
+  <article class="short-story" aria-labelledby="visual-intelligence-title" markdown="1">
+
+## Look up a species with Visual Intelligence {#visual-intelligence-title}
+
+Use Visual Intelligence to identify an animal or plant, then open its Wikipedia page. From there, send the species to Taxon Bridge to see its translations in your selected languages.
+
+  </article>
+  <article class="short-story" aria-labelledby="books-title" markdown="1">
+
+## Look up a species while reading in Books {#books-title}
+
+Apple Books does not offer the same Share Sheet access when you select text. [Add the Taxon Bridge Shortcut once]({{ '/support/#apple-books-use-a-shortcut' | relative_url }}), then select a species name in Books and run the Shortcut to see its translations.
+
+  </article>
+</section>
+
+<section class="features-section" aria-label="Taxon Bridge features">
 
   <ul class="feature-list">
-    <li><strong>Names in your languages</strong><span>Choose and order the languages you care about, then see their recorded common names together.</span></li>
+    <li><strong>Names in your languages</strong><span>Select and order the languages you care about, then see their recorded common names together.</span></li>
     <li><strong>Scientific identity</strong><span>Keep the scientific name and verified taxon identity visible as the shared point of reference.</span></li>
     <li><strong>Look up a name while reading</strong><span>Select a biological name in Safari, Notes, Mail, or another app and see what it is called in your languages.</span></li>
     <li><strong>Look up names from Wikipedia</strong><span>Open a Wikipedia article about an animal, plant, or fungus—even from Visual Intelligence—and see its names in your languages.</span></li>

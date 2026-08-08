@@ -15,9 +15,9 @@ the support page remains usable when media does not load.
 ## Published walkthroughs
 
 - `website/assets/support/share-selected-name.gif`: selecting a biological
-  name, opening the Share Sheet, and reviewing the resolved result.
+  name, opening the Share Sheet, and reviewing the lookup result.
 - `website/assets/support/share-merlin-page.gif`: sharing a public Merlin Bird
-  ID species page and reviewing the resolved result.
+  ID species page and reviewing the lookup result.
 
 The captures must obscure suggested contacts, account information, location,
 notifications, browsing history, and other personal information. Keep clips

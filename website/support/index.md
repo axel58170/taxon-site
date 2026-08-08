@@ -82,13 +82,13 @@ Apple documents how to [run a Shortcut with Back Tap](https://support.apple.com/
 
 ### Look up a taxon from a Wikipedia article {#share-wikipedia-article}
 
-Taxon Bridge can resolve a supported localized Wikipedia article from the taxon's identity linked to that page. You do not need to select or copy the article title.
+Taxon Bridge can find the taxon linked to a supported localized Wikipedia article and show its names in your languages. You do not need to select or copy the article title.
 
 1. Open the article in Wikipedia or Safari.
 2. Choose **Share**, then choose **Taxon Bridge** in the system Share Sheet.
 3. Review the sourced names in your configured languages and the scientific name.
 
-This is also a useful bridge from Apple Visual Intelligence. After Visual Intelligence identifies an organism, open its result in Wikipedia, then share that Wikipedia article with Taxon Bridge. Visual Intelligence does not currently offer Taxon Bridge directly, so the Wikipedia page provides the handoff.
+This also provides a way to look up names after Apple Visual Intelligence identifies an organism. Open the Visual Intelligence result in Wikipedia, choose **Share**, and then choose **Taxon Bridge**. Visual Intelligence does not currently offer Taxon Bridge directly, so its Wikipedia result is the available route into the lookup.
 
 Taxon Bridge accepts localized article URLs such as `https://en.wikipedia.org/wiki/Acer_campestre`. It uses the article's structured Wikipedia identity rather than guessing from its title or parsing the page text. Pages without a linked biological taxon return no result.
 
@@ -136,14 +136,14 @@ Taxon Bridge does not invent or automatically translate names. It shows common n
 
 If you know a commonly used name that is missing, first check the taxon's record in [Catalogue of Life](https://www.catalogueoflife.org/). If the name is missing there, [contact Catalogue of Life](https://www.catalogueoflife.org/howto/contribute) so its source record can be corrected. Contact Taxon Bridge support only if the name is already recorded in Catalogue of Life but the app still shows **Not available**. Include the scientific name, language, expected common name, and a link to the Catalogue of Life record.
 
-### A Merlin species page does not resolve
+### Taxon Bridge cannot find the bird from a Merlin page
 
 - Confirm the shared URL begins with `https://merlinbirds.org/species/`.
 - Confirm networking is available.
 - Open Taxon Bridge once, then try the Share action again.
 - Report the public species-page URL and app build if the problem persists.
 
-### A Wikipedia article does not resolve
+### Taxon Bridge cannot find a taxon from a Wikipedia article
 
 - Confirm the shared page is an article on a localized Wikipedia host, such as `en.wikipedia.org` or `fr.wikipedia.org`.
 - Confirm networking is available for the first lookup.

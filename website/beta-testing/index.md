@@ -49,8 +49,8 @@ to test the two behaviors separately.
    Bridge reports an understandable connection problem instead of hanging or
    showing an unrelated result. If you have used that name, record and use a
    different non-bundled scientific name for the remaining steps.
-4. Disable Airplane Mode and retry that exact query. Confirm it resolves and
-   appears in **Recent taxa**.
+4. Disable Airplane Mode and retry that exact query. Confirm the expected taxon
+   appears, including in **Recent taxa**.
 5. Relaunch Taxon Bridge, enable Airplane Mode again, and repeat the query.
    Confirm the cached result and its name ordering remain available. If an image
    loaded online, check whether it remains available too.
@@ -67,19 +67,19 @@ outcome; it does not necessarily mean clearing failed.
 
 1. In Safari or Notes, select only a biological name, choose **Share**, then
    choose **Taxon Bridge**.
-2. Confirm the extension receives the selected text, resolves it, and displays
-   names in the same configuration as the main app.
+2. Confirm the extension receives the selected text, finds the matching taxon,
+   and displays names in the same configuration as the main app.
 3. Try both a common name and a scientific name. If a result is ambiguous,
    confirm you can choose the intended taxon.
 4. Copy a displayed name, paste it elsewhere, then close the extension and
    confirm you return to the source app.
-5. Resolve a non-bundled name in the main app, enable Airplane Mode, and share
+5. Look up a non-bundled name in the main app, enable Airplane Mode, and share
    that same text. Confirm the extension can use the shared cached result.
 6. Still offline, share `Panthera leo`, then share a never-used non-bundled
-   taxon. The bundled name should resolve; the uncached name should fail clearly
+   taxon. The bundled taxon should appear; the uncached name should fail clearly
    rather than hang.
 7. If you use Merlin Bird ID, share a public species page to Taxon Bridge and
-   confirm the expected bird resolves.
+   confirm the expected bird appears.
 
 Apple Books does not currently offer Taxon Bridge's Share Extension for selected
 book text. Use the [Shortcut procedure on the Support page]({{ '/support/#apple-books-use-a-shortcut' | relative_url }})

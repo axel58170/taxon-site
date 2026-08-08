@@ -37,8 +37,7 @@ Open Taxon Bridge once, then open **Settings → Languages**. Choose the languag
 2. If Taxon Bridge is not visible, scroll through the Share Sheet and choose **More**.
 3. Add Taxon Bridge to the preferred actions and move it near the front if desired.
 
-Selected text and supported Merlin Bird ID species pages can now be shared with Taxon Bridge.
-Supported localized Wikipedia article pages can be shared in the same way.
+You can now look up selected names, birds on Merlin Bird ID species pages, and animals, plants, or fungi on Wikipedia article pages.
 
 ### 3. Add Taxon Bridge to Shortcuts
 
@@ -82,7 +81,7 @@ Apple documents how to [run a Shortcut with Back Tap](https://support.apple.com/
 
 ### Look up a taxon from a Wikipedia article {#share-wikipedia-article}
 
-Taxon Bridge can find the taxon linked to a supported localized Wikipedia article and show its names in your languages. You do not need to select or copy the article title.
+From a Wikipedia article about an animal, plant, or fungus, Taxon Bridge can find the linked taxon and show its names in your languages. You do not need to select or copy the article title.
 
 1. Open the article in Wikipedia or Safari.
 2. Choose **Share**, then choose **Taxon Bridge** in the system Share Sheet.

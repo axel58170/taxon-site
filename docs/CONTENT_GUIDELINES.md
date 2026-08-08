@@ -18,6 +18,22 @@ interface used to reach it.
   doing. Do not imply that they permanently leave, transfer from, or “continue
   from” the source app.
 
+## Lead with the normal case
+
+- Introduce a capability with the result people normally expect: for example,
+  **Look up names from Wikipedia** and “open an article about an animal, plant,
+  or fungus to see its names in your languages.”
+- Do not make exceptional limitations the premise of a feature. Avoid openings
+  such as **Use a supported Wikipedia article**, even when some pages cannot be
+  matched or some languages do not have a recorded common name.
+- Keep the main claim accurate without turning it into a disclaimer. Describe
+  what the feature does in the usual case, then explain relevant exceptions in
+  supporting text, troubleshooting, or the point where someone encounters
+  them.
+- Lead with a limitation only when it changes a decision the person must make,
+  prevents the next step, or is necessary for safety, privacy, or informed
+  consent.
+
 ## Use familiar language
 
 - Do not use **resolve**, **resolution**, or **resolved** in customer-facing
@@ -41,6 +57,8 @@ Before publishing customer-facing text, check that:
    contexts rather than the goal;
 3. the copy does not imply that an overlay removes the person from the source
    app;
-4. **resolve** appears only when quoting an existing interface label; and
-5. captions, alternative text, descriptions, privacy text, and testing
+4. normal capability copy leads with the successful outcome and puts
+   exceptional limitations in the relevant supporting context;
+5. **resolve** appears only when quoting an existing interface label; and
+6. captions, alternative text, descriptions, privacy text, and testing
    instructions follow the same rules as the main page.

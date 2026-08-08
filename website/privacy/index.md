@@ -13,7 +13,7 @@ footer_link: support
 
 <p class="meta"><strong>Effective date:</strong> 24 July 2026</p>
 
-Taxon Bridge is designed to resolve biological names without an account, advertising, analytics, or user tracking. This policy explains the information processed when you use the app, Share Extension, or Shortcuts actions.
+Taxon Bridge is designed to look up biological names without an account, advertising, analytics, or user tracking. This policy explains the information processed when you use the app, Share Extension, or Shortcuts actions.
 
 ## Information you provide
 
@@ -23,7 +23,7 @@ The Share Extension reads only text or a web URL that you explicitly share with 
 
 ## External naming services
 
-Taxon Bridge sends lookup information over HTTPS to services needed to resolve and enrich a taxon:
+Taxon Bridge sends lookup information over HTTPS to services needed to find a taxon and retrieve its names and other details:
 
 - Catalogue of Life infrastructure at `api.checklistbank.org` normally receives the original lookup text first, along with scientific names or Catalogue of Life identifiers required to retrieve taxonomic and vernacular-name data.
 - Wikidata at `www.wikidata.org` and `query.wikidata.org` receives the original lookup text when fallback discovery is needed. It also receives configured language codes, bounded candidate Q-IDs, scientific names, and Q-IDs needed for taxon verification, localized names, and Wikipedia links. For a supported Merlin species-page URL, Wikidata receives the extracted eBird species code in an exact `P3444` lookup.
@@ -44,7 +44,7 @@ Taxon Bridge stores the following in the app’s shared iOS container so the mai
 - your ordered language codes, scientific-name position, and preferred Wikipedia language;
 - normalized lookup text and the ordered languages used for the lookup;
 - lookup timestamps;
-- resolved or candidate taxa, including Q-IDs, scientific names, ranks, localized names and attribution, and Wikipedia links.
+- matching or candidate taxa, including Q-IDs, scientific names, ranks, localized names and attribution, and Wikipedia links.
 
 Cached results no older than 30 days may be used when a naming service is unavailable. Cache records remain on the device until you choose **Clear recent results**, remove the app, or iOS otherwise removes the app container. Clearing recent results does not reset your language preferences.
 

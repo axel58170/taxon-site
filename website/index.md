@@ -63,17 +63,17 @@ The Share Sheet is not available everywhere—Apple Books is one notable excepti
 
 <p class="eyebrow">From Merlin Bird ID</p>
 
-## From Merlin to Taxon Bridge {#merlin-title}
+## See a Merlin bird in your languages {#merlin-title}
 
 The same Share Sheet workflow works particularly well with Merlin Bird ID. After Merlin identifies a bird, send its species page to Taxon Bridge and immediately see what that species is called in all your other chosen languages.
 
-There is no need to leave the identification behind or search for each name separately. The scientific name remains visible as the common point of reference.
+Taxon Bridge opens over Merlin, so you can check the names and then close the result to stay where you were. There is no need to search for each name separately. The scientific name remains visible as the common point of reference.
 
 <p class="note">Taxon Bridge is not affiliated with or endorsed by Merlin Bird ID, eBird, or the Cornell Lab of Ornithology.</p>
 
   </div>
 
-{% include motion-figure.html class="feature-media" animation="/assets/support/share-merlin-page.gif" animation_alt="Animated walkthrough showing a European Goldfinch in Merlin Bird ID, the Share Sheet with Taxon Bridge, and the multilingual result. Tap indicators mark Share and Taxon Bridge." poster="/assets/support/share-merlin-page-poster.webp" poster_alt="The iPhone Share Sheet showing Taxon Bridge as an option for a European Goldfinch shared from Merlin Bird ID." caption="Share a bird from Merlin and see the sourced names together." %}
+{% include motion-figure.html class="feature-media" animation="/assets/support/share-merlin-page.gif" animation_alt="Animated walkthrough showing a European Goldfinch in Merlin Bird ID, the Share Sheet with Taxon Bridge, and the multilingual result. Tap indicators mark Share and Taxon Bridge." poster="/assets/support/share-merlin-page-poster.webp" poster_alt="The iPhone Share Sheet showing Taxon Bridge as an option for a European Goldfinch shared from Merlin Bird ID." caption="Look up a Merlin bird, see the sourced names together, and then keep using Merlin." %}
 
 </section>
 
@@ -91,10 +91,10 @@ Taxon Bridge keeps identification and translation connected. Start with a name o
   <ul class="feature-list">
     <li><strong>Names in your languages</strong><span>Choose and order the languages you care about, then see their recorded common names together.</span></li>
     <li><strong>Scientific identity</strong><span>Keep the scientific name and verified taxon identity visible as the shared point of reference.</span></li>
-    <li><strong>Share selected text</strong><span>Send a biological name from Safari, Notes, Mail, and other apps through the iPhone Share Sheet.</span></li>
-    <li><strong>Share a Wikipedia article</strong><span>Send a supported Wikipedia article—even one opened from Visual Intelligence—and resolve its linked taxon directly.</span></li>
-    <li><strong>Continue from Merlin</strong><span>Share a supported Merlin Bird ID species page without searching for the bird again.</span></li>
-    <li><strong>Shortcuts and Siri</strong><span>Resolve taxa, retrieve individual names, or show your configured names in personal automations.</span></li>
+    <li><strong>Look up a name while reading</strong><span>Select a biological name in Safari, Notes, Mail, or another app and see what it is called in your languages.</span></li>
+    <li><strong>Look up names from Wikipedia</strong><span>Use a supported Wikipedia article—even one opened from Visual Intelligence—to find the linked animal, plant, or fungus.</span></li>
+    <li><strong>Look up a bird from Merlin</strong><span>See the names for a supported Merlin Bird ID species page, then close the result and stay in Merlin.</span></li>
+    <li><strong>Shortcuts and Siri</strong><span>Look up taxa, retrieve individual names, or show your configured names in personal automations.</span></li>
   </ul>
 </section>
 

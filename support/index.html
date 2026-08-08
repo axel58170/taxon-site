@@ -62,7 +62,8 @@
   <li>Add Taxon Bridge to the preferred actions and move it near the front if desired.</li>
 </ol>
 
-<p>Selected text and supported Merlin Bird ID species pages can now be shared with Taxon Bridge.</p>
+<p>Selected text and supported Merlin Bird ID species pages can now be shared with Taxon Bridge.
+Supported localized Wikipedia article pages can be shared in the same way.</p>
 
 <h3 id="3-add-taxon-bridge-to-shortcuts">3. Add Taxon Bridge to Shortcuts</h3>
 
@@ -120,6 +121,20 @@
   <figcaption>Share a bird from Merlin Bird ID to Taxon Bridge. Taxon Bridge is not affiliated with or endorsed by Merlin Bird ID, eBird, or the Cornell Lab of Ornithology.</figcaption>
 </figure>
 
+<h3 id="share-wikipedia-article">Look up a taxon from a Wikipedia article</h3>
+
+<p>Taxon Bridge can resolve a supported localized Wikipedia article from the taxon’s identity linked to that page. You do not need to select or copy the article title.</p>
+
+<ol>
+  <li>Open the article in Wikipedia or Safari.</li>
+  <li>Choose <strong>Share</strong>, then choose <strong>Taxon Bridge</strong> in the system Share Sheet.</li>
+  <li>Review the sourced names in your configured languages and the scientific name.</li>
+</ol>
+
+<p>This is also a useful bridge from Apple Visual Intelligence. After Visual Intelligence identifies an organism, open its result in Wikipedia, then share that Wikipedia article with Taxon Bridge. Visual Intelligence does not currently offer Taxon Bridge directly, so the Wikipedia page provides the handoff.</p>
+
+<p>Taxon Bridge accepts localized article URLs such as <code class="language-plaintext highlighter-rouge">https://en.wikipedia.org/wiki/Acer_campestre</code>. It uses the article’s structured Wikipedia identity rather than guessing from its title or parsing the page text. Pages without a linked biological taxon return no result.</p>
+
 <h2 id="apple-books-use-a-shortcut">Apple Books: use a Shortcut</h2>
 
 <p>Apple Books does not currently show third-party Share or Action extensions, including Taxon Bridge, for selected book text—even when the book allows sharing. Books can still run a Shortcut from its Share Sheet.</p>
@@ -175,6 +190,16 @@
   <li>Confirm networking is available.</li>
   <li>Open Taxon Bridge once, then try the Share action again.</li>
   <li>Report the public species-page URL and app build if the problem persists.</li>
+</ul>
+
+<h3 id="a-wikipedia-article-does-not-resolve">A Wikipedia article does not resolve</h3>
+
+<ul>
+  <li>Confirm the shared page is an article on a localized Wikipedia host, such as <code class="language-plaintext highlighter-rouge">en.wikipedia.org</code> or <code class="language-plaintext highlighter-rouge">fr.wikipedia.org</code>.</li>
+  <li>Confirm networking is available for the first lookup.</li>
+  <li>Some Wikipedia pages do not have a linked Wikidata taxon; Taxon Bridge will not guess from the article title.</li>
+  <li>Open Taxon Bridge once, then try the Share action again.</li>
+  <li>Report the public article URL and app build if the problem persists.</li>
 </ul>
 
 <h3 id="offline-results">Offline results</h3>

@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Taxon Bridge — biological names across languages
-description: Taxon Bridge shows sourced biological names in the languages you choose.
+title: Taxon Bridge — one name, many languages
+description: Taxon Bridge shows the sourced names of animals, plants, and fungi in all the languages you choose.
 ---
 
 <section class="hero" aria-labelledby="hero-title">
@@ -9,9 +9,9 @@ description: Taxon Bridge shows sourced biological names in the languages you ch
 
 <p class="eyebrow">Biological names, bridged</p>
 
-# Know what that species is called. {#hero-title}
+# One name, many languages. {#hero-title}
 
-<p class="lede">When you come across a common or scientific name—while reading, browsing, or identifying a bird—you can send it to Taxon Bridge and see what the same animal, plant, or fungus is called in each of the languages you have chosen. The app keeps the scientific name alongside those sourced common names, so you can understand the result and confirm that you are looking at the right organism rather than relying on a generated translation or an AI guess.</p>
+<p class="lede">Enter one common or scientific name and instantly see what the same animal, plant, or fungus is called in all the languages you have chosen. Taxon Bridge gives you the complete multilingual picture at once, with the scientific name that connects them all.</p>
 
 <div class="actions">
   <a class="button" href="mailto:taxon@axelgraff.fr?subject=Taxon%20Bridge%20TestFlight">Ask about TestFlight</a>
@@ -22,43 +22,69 @@ description: Taxon Bridge shows sourced biological names in the languages you ch
   <img class="hero-icon" src="{{ '/assets/app-icon.png' | relative_url }}" alt="Taxon Bridge app icon" width="320" height="320">
 </section>
 
-<section class="document" aria-labelledby="why-title" markdown="1">
+<section class="birding-story" aria-labelledby="birding-title">
+  <div class="section-copy" markdown="1">
 
-<p class="eyebrow">Why I built Taxon Bridge</p>
+<p class="eyebrow">Follow the bird, not the translation trail</p>
 
-## One organism, several languages {#why-title}
+## Built for multilingual birding {#birding-title}
 
-I am a native Dutch speaker living in France, and I have spent much of my working life with English-speaking people. I was often looking up the same animal, plant, or fungus in several languages—switching Wikipedia languages or making repeated trips through translation tools just to connect the names.
+A bird may be reported under a local name, identified in Merlin in another language, and recorded in a list you keep in your own language. Taxon Bridge lets you move quickly between all of those names without losing track of the species.
 
-Most apps show at most one common language, sometimes alongside the scientific name. I wanted the languages I speak, use, or am learning together in one place, with the scientific name as a reliable bridge. That is why I created Taxon Bridge.
+For birders doing a Big Year—or simply birding across borders—that means less time repeating searches and more time paying attention to the bird in front of you.
 
+  </div>
+  <ol class="name-journey" aria-label="A species name moving between three contexts">
+    <li><span>Local report</span><strong>A name you encounter</strong></li>
+    <li><span>Merlin Bird ID</span><strong>A name used to identify it</strong></li>
+    <li><span>Your list</span><strong>A name in your own language</strong></li>
+  </ol>
 </section>
 
-<section class="feature-grid" aria-label="Ways to use Taxon Bridge">
-<article class="card" markdown="1">
+<section class="workflow-section" aria-labelledby="share-title">
+  <div class="workflow-copy" markdown="1">
 
-<p class="eyebrow">While reading</p>
+<p class="eyebrow">Stay in the flow</p>
 
-## Select, share, understand
+## Look up a name from almost anywhere {#share-title}
 
-Select a biological name in Safari, Notes, or another iPhone app. Choose **Share**, then **Taxon Bridge**, to see its names without leaving what you are reading or opening the main Taxon Bridge app. When you are finished, choose **Close** and you will return immediately to the same place, ready to continue reading without losing your focus.
+When you encounter a biological name in your browser, an email, or almost anywhere else you can select text, send it to Taxon Bridge through the Share Sheet. The names appear straight away, with as few taps as possible. Close the result when you are done and continue reading where you left off.
+
+The Share Sheet is not available everywhere—Apple Books is one notable exception. In those situations, you can use a [Shortcut instead]({{ '/support/#apple-books-use-a-shortcut' | relative_url }}) or run a Taxon Bridge Shortcut with Siri. You can also enter a name directly in the app when it comes up in a printed book or a conversation.
+
+  </div>
 
 {% include motion-figure.html class="feature-media" animation="/assets/support/share-selected-name.gif" animation_alt="Animated walkthrough showing Hazelaar selected on a Wikipedia page in Safari, the text-selection actions, the Share Sheet with Taxon Bridge, and the multilingual result. Tap indicators mark the menu arrow, Share, and Taxon Bridge." poster="/assets/support/share-selected-name-poster.webp" poster_alt="The iPhone Share Sheet showing Taxon Bridge as an option for Hazelaar selected on a Wikipedia page." caption="Select a name, share it to Taxon Bridge, and see its names in your languages." %}
 
-<p class="note">Apple Books does not show third-party Share extensions for selected book text. Use the <a href="{{ '/support/#apple-books-use-a-shortcut' | relative_url }}">Taxon Bridge Shortcut workaround</a> instead.</p>
+</section>
 
-</article>
-<article class="card" markdown="1">
+<section class="workflow-section workflow-section-reversed" aria-labelledby="merlin-title">
+  <div class="workflow-copy" markdown="1">
 
 <p class="eyebrow">From Merlin Bird ID</p>
 
-## Share the bird page
+## From Merlin to Taxon Bridge {#merlin-title}
 
-When Merlin Bird ID shows you a bird and you want to know what it is called in other languages, choose **Share** and send it to **Taxon Bridge**. You will see the names available in the languages you have chosen, together with the scientific name.
+The same Share Sheet workflow works particularly well with Merlin Bird ID. After Merlin identifies a bird, send its species page to Taxon Bridge and immediately see what that species is called in all your other chosen languages.
 
-{% include motion-figure.html class="feature-media" animation="/assets/support/share-merlin-page.gif" animation_alt="Animated walkthrough showing a European Goldfinch in Merlin Bird ID, the Share Sheet with Taxon Bridge, and the multilingual result. Tap indicators mark Share and Taxon Bridge." poster="/assets/support/share-merlin-page-poster.webp" poster_alt="The iPhone Share Sheet showing Taxon Bridge as an option for a European Goldfinch shared from Merlin Bird ID." caption="Share a bird from Merlin and see the sourced names together." %}
+There is no need to leave the identification behind or search for each name separately. The scientific name remains visible as the common point of reference.
 
 <p class="note">Taxon Bridge is not affiliated with or endorsed by Merlin Bird ID, eBird, or the Cornell Lab of Ornithology.</p>
 
-</article>
+  </div>
+
+{% include motion-figure.html class="feature-media" animation="/assets/support/share-merlin-page.gif" animation_alt="Animated walkthrough showing a European Goldfinch in Merlin Bird ID, the Share Sheet with Taxon Bridge, and the multilingual result. Tap indicators mark Share and Taxon Bridge." poster="/assets/support/share-merlin-page-poster.webp" poster_alt="The iPhone Share Sheet showing Taxon Bridge as an option for a European Goldfinch shared from Merlin Bird ID." caption="Share a bird from Merlin and see the sourced names together." %}
+
+</section>
+
+<section class="beyond-birds" aria-labelledby="beyond-title" markdown="1">
+
+<p class="eyebrow">The whole living world</p>
+
+## More than birds {#beyond-title}
+
+Taxon Bridge is not limited to birds. A plant on a gardening website, a mushroom mentioned in a recipe, or an unfamiliar animal in an article can all be looked up in exactly the same way.
+
+<p class="organism-examples" aria-label="Examples of organisms Taxon Bridge can look up"><span>Plants</span><span>Fungi</span><span>Animals</span></p>
+
 </section>

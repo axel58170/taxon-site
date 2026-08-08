@@ -38,6 +38,7 @@ Open Taxon Bridge once, then open **Settings → Languages**. Choose the languag
 3. Add Taxon Bridge to the preferred actions and move it near the front if desired.
 
 Selected text and supported Merlin Bird ID species pages can now be shared with Taxon Bridge.
+Supported localized Wikipedia article pages can be shared in the same way.
 
 ### 3. Add Taxon Bridge to Shortcuts
 
@@ -78,6 +79,18 @@ Apple documents how to [run a Shortcut with Back Tap](https://support.apple.com/
 3. Review the sourced names in your configured languages and the scientific name.
 
 {% include motion-figure.html class="support-media" animation="/assets/support/share-merlin-page.gif" animation_alt="Animated walkthrough showing a European Goldfinch in Merlin Bird ID, the Share Sheet with Taxon Bridge, and the multilingual result. Tap indicators mark Share and Taxon Bridge." poster="/assets/support/share-merlin-page-poster.webp" poster_alt="The iPhone Share Sheet showing Taxon Bridge as an option for a European Goldfinch shared from Merlin Bird ID." caption="Share a bird from Merlin Bird ID to Taxon Bridge. Taxon Bridge is not affiliated with or endorsed by Merlin Bird ID, eBird, or the Cornell Lab of Ornithology." %}
+
+### Look up a taxon from a Wikipedia article {#share-wikipedia-article}
+
+Taxon Bridge can resolve a supported localized Wikipedia article from the taxon's identity linked to that page. You do not need to select or copy the article title.
+
+1. Open the article in Wikipedia or Safari.
+2. Choose **Share**, then choose **Taxon Bridge** in the system Share Sheet.
+3. Review the sourced names in your configured languages and the scientific name.
+
+This is also a useful bridge from Apple Visual Intelligence. After Visual Intelligence identifies an organism, open its result in Wikipedia, then share that Wikipedia article with Taxon Bridge. Visual Intelligence does not currently offer Taxon Bridge directly, so the Wikipedia page provides the handoff.
+
+Taxon Bridge accepts localized article URLs such as `https://en.wikipedia.org/wiki/Acer_campestre`. It uses the article's structured Wikipedia identity rather than guessing from its title or parsing the page text. Pages without a linked biological taxon return no result.
 
 ## Apple Books: use a Shortcut {#apple-books-use-a-shortcut}
 
@@ -129,6 +142,14 @@ If you know a commonly used name that is missing, first check the taxon's record
 - Confirm networking is available.
 - Open Taxon Bridge once, then try the Share action again.
 - Report the public species-page URL and app build if the problem persists.
+
+### A Wikipedia article does not resolve
+
+- Confirm the shared page is an article on a localized Wikipedia host, such as `en.wikipedia.org` or `fr.wikipedia.org`.
+- Confirm networking is available for the first lookup.
+- Some Wikipedia pages do not have a linked Wikidata taxon; Taxon Bridge will not guess from the article title.
+- Open Taxon Bridge once, then try the Share action again.
+- Report the public article URL and app build if the problem persists.
 
 ### Offline results
 

@@ -200,6 +200,7 @@ h3 {
 
 .birding-story,
 .workflow-section,
+.features-section,
 .beyond-birds {
   margin-block: clamp(4rem, 9vw, 8rem);
 }
@@ -216,6 +217,7 @@ h3 {
 
 .section-copy h2,
 .workflow-copy h2,
+.features-heading h2,
 .beyond-birds h2 {
   margin-top: 0;
 }
@@ -310,6 +312,53 @@ h3 {
   padding-left: 1rem;
   border-left: 3px solid var(--line);
   font-size: 0.92rem;
+}
+
+.features-section {
+  padding: clamp(2.5rem, 7vw, 5rem);
+  border: 1px solid var(--line);
+  border-radius: 1.75rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.features-heading {
+  max-width: 46rem;
+}
+
+.features-heading > p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: clamp(1.08rem, 2vw, 1.22rem);
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feature-list li {
+  display: grid;
+  align-content: start;
+  gap: 0.55rem;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--soft);
+}
+
+.feature-list strong {
+  color: var(--ink);
+  font-size: 1.04rem;
+}
+
+.feature-list span {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 
 .beyond-birds {
@@ -429,6 +478,12 @@ code {
   margin: 0;
 }
 
+@media (max-width: 64rem) {
+  .feature-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 44rem) {
   .site-header,
   .site-footer {
@@ -464,6 +519,10 @@ code {
 
   .workflow-section-reversed .feature-media {
     order: 2;
+  }
+
+  .feature-list {
+    grid-template-columns: 1fr;
   }
 }
 

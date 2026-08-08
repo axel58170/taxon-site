@@ -39,7 +39,11 @@
 
 <h2 id="before-you-start">Before you start</h2>
 
-<p>When you find an unfamiliar name while reading, the Share Sheet is currently the fastest direct route to Taxon Bridge. On iPhone, the usual way to send selected text to another app is through the Share Sheet. Moving Taxon Bridge near the front reduces the number of taps. A Shortcut can provide another fast route when copying the selected name is convenient.</p>
+<p>If you come across an unfamiliar name while reading, select it and use the Share Sheet to send it to Taxon Bridge. Taxon Bridge shows the names in an overlay. Close the overlay to continue reading exactly where you left off.</p>
+
+<p>If you want to see the image and other details, close the overlay and open Taxon Bridge within the next hour. The app will open the same taxon.</p>
+
+<p>Unfortunately, sometimes the Share Sheet does not offer Taxon Bridge—for example, in Apple Books. No worries: you can still see the animal’s name in your chosen languages by setting up a Shortcut. The Shortcut shows the names and lets you either dismiss the result or open the taxon in the full Taxon Bridge app. We’ll show you exactly how to create it, step by step.</p>
 
 <h3 id="1-choose-your-languages">1. Choose your languages</h3>
 
@@ -67,26 +71,21 @@
 <ul>
   <li><strong>Resolve Taxon</strong> accepts a common or scientific name and finds the matching animal, plant, or fungus. If several matches are possible, it asks you to choose.</li>
   <li><strong>Get Taxon Name</strong> takes that result and returns its common name in one language. Enter a language code such as <code class="language-plaintext highlighter-rouge">fr</code>, <code class="language-plaintext highlighter-rouge">nl</code>, or <code class="language-plaintext highlighter-rouge">en-GB</code>.</li>
-  <li><strong>Get Configured Taxon Names</strong> takes that result and returns the common names in your configured languages, plus the scientific name.</li>
+  <li><strong>Get Configured Taxon Names</strong> takes that result and shows the common names in your configured languages, plus the scientific name. Choose <strong>Open in Taxon Bridge</strong> to continue in the full app, or dismiss the result to return to what you were doing.</li>
 </ul>
 
-<p>These actions return values for the next action in the Shortcut; they do not open Taxon Bridge. Add <strong>Show Content</strong> to display the names (<strong>Show Result</strong> on older iOS versions), or <strong>Copy to Clipboard</strong> if you want to paste them elsewhere.</p>
+<p>The actions also return values for the next action in the Shortcut. Add <strong>Copy to Clipboard</strong> if you want to paste the names elsewhere.</p>
 
 <h4 id="optional-run-a-lookup-with-double-back-tap">Optional: run a lookup with Double Back Tap</h4>
 
 <p>This route is useful in apps where copying selected text is quicker than opening the Share Sheet:</p>
 
 <ol>
-  <li>Create a new Shortcut with these actions in order: <strong>Get Clipboard → Resolve Taxon → Get Configured Taxon Names → Show Content</strong>.</li>
+  <li>Create a new Shortcut with these actions in order: <strong>Get Clipboard → Resolve Taxon → Get Configured Taxon Names</strong>.</li>
   <li>Make sure <strong>Resolve Taxon</strong> uses the Clipboard as its <strong>Name</strong>, and <strong>Get Configured Taxon Names</strong> uses the result from <strong>Resolve Taxon</strong>.</li>
   <li>On the iPhone, open <strong>Settings → Accessibility → Touch → Back Tap → Double Tap</strong>, then choose the new Shortcut.</li>
   <li>While reading, select and copy only the name, then double-tap the back of the iPhone to see the configured names.</li>
 </ol>
-
-<figure class="support-media">
-  <img src="/assets/support/shortcut-actions.webp" alt="A Shortcut connecting Get Clipboard, Resolve Taxon, Get Configured Taxon Names, and Show Content." width="1206" height="2622" loading="lazy" />
-  <figcaption>The Shortcut reads the copied name, resolves it, and shows the configured names.</figcaption>
-</figure>
 
 <p>Apple documents how to <a href="https://support.apple.com/guide/shortcuts/run-shortcuts-tapping-iphone/apd897693606/ios">run a Shortcut with Back Tap</a>.</p>
 
@@ -130,13 +129,12 @@
   <li>Enable <strong>Show in Share Sheet</strong> and configure the shortcut to receive <strong>Text</strong>.</li>
   <li>Add <strong>Resolve Taxon</strong>; set <strong>Name</strong> to <strong>Shortcut Input</strong>.</li>
   <li>Add <strong>Get Configured Taxon Names</strong>; use the taxon returned by <strong>Resolve Taxon</strong>.</li>
-  <li>Add Apple’s <strong>Show Result</strong> action; show the text returned by <strong>Get Configured Taxon Names</strong>.</li>
   <li>In Books, select a biological name, choose <strong>Share</strong>, then run the shortcut.</li>
 </ol>
 
-<p>If the name is ambiguous, Taxon Bridge asks which taxon you mean. After you choose one, the shortcut continues and <strong>Show Result</strong> displays the configured names and scientific name.</p>
+<p>If the name is ambiguous, Taxon Bridge asks which taxon you mean. After you choose one, the Shortcut shows the configured names and scientific name. Dismiss the result to return to Books, or choose <strong>Open in Taxon Bridge</strong> to see the image and other details in the full app.</p>
 
-<p>If the screen closes immediately after your choice, the shortcut probably ends at <strong>Resolve Taxon</strong>. Add <strong>Get Configured Taxon Names</strong> and <strong>Show Result</strong> as described above. Action labels follow the device language.</p>
+<p>If the screen closes immediately after your choice, the Shortcut probably ends at <strong>Resolve Taxon</strong>. Add <strong>Get Configured Taxon Names</strong> as described above. Action labels follow the device language.</p>
 
 <p>This limitation is controlled by Books; an <a href="https://developer.apple.com/forums/thread/762784">Apple Frameworks Engineer describes its predefined recipient list</a>. Taxon Bridge plans to request supported direct integration after launch.</p>
 

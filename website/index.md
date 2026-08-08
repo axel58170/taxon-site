@@ -84,7 +84,7 @@ Taxon Bridge opens over Merlin, so you can check the names and then close the re
 
 ## One lookup, a complete taxon view {#features-title}
 
-Taxon Bridge keeps identification and translation connected. Start with a name or a supported page, then move between sourced common names, scientific identity, and the apps you already use.
+Taxon Bridge keeps identification and translation connected. Start with a name, a Wikipedia article about an organism, or a Merlin species page, then move between sourced common names, scientific identity, and the apps you already use.
 
   </div>
 
@@ -92,8 +92,8 @@ Taxon Bridge keeps identification and translation connected. Start with a name o
     <li><strong>Names in your languages</strong><span>Choose and order the languages you care about, then see their recorded common names together.</span></li>
     <li><strong>Scientific identity</strong><span>Keep the scientific name and verified taxon identity visible as the shared point of reference.</span></li>
     <li><strong>Look up a name while reading</strong><span>Select a biological name in Safari, Notes, Mail, or another app and see what it is called in your languages.</span></li>
-    <li><strong>Look up names from Wikipedia</strong><span>Use a supported Wikipedia article—even one opened from Visual Intelligence—to find the linked animal, plant, or fungus.</span></li>
-    <li><strong>Look up a bird from Merlin</strong><span>See the names for a supported Merlin Bird ID species page, then close the result and stay in Merlin.</span></li>
+    <li><strong>Look up names from Wikipedia</strong><span>Open a Wikipedia article about an animal, plant, or fungus—even from Visual Intelligence—and see its names in your languages.</span></li>
+    <li><strong>Look up a bird from Merlin</strong><span>See the names for a bird on its Merlin Bird ID species page, then close the result and stay in Merlin.</span></li>
     <li><strong>Shortcuts and Siri</strong><span>Look up taxa, retrieve individual names, or show your configured names in personal automations.</span></li>
   </ul>
 </section>

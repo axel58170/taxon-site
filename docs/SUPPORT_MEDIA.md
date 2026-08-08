@@ -7,8 +7,6 @@ the support page remains usable when media does not load.
 
 - `website/assets/support/language-order.webp`: language order and scientific
   name placement.
-- `website/assets/support/shortcut-actions.webp`: copied-text Shortcut with
-  **Get Clipboard → Resolve Taxon → Get Configured Taxon Names → Show Content**.
 - `website/assets/support/share-selected-name-poster.webp`: reduced-motion
   fallback for the selected-text walkthrough.
 - `website/assets/support/share-merlin-page-poster.webp`: reduced-motion

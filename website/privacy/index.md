@@ -61,7 +61,7 @@ Fresh lookup results may be reused for 30 days. Records remain on the device unt
 
 Representative image metadata and display-sized image bytes are cached for 30 days in a cache limited to 64 MiB and 128 entries. An older image may remain available offline for up to 90 days. A missing-image result is stored for 24 hours to avoid repeated requests. **Clear recent results** also removes this image cache.
 
-When the Share Extension displays a result, it stores only the selected Wikidata Q-ID and a timestamp so the app can open that taxon. The record stays on your device until the app next reads it. The app then removes the record and ignores it if it is more than one hour old.
+In addition to the shared lookup result described above, when the Share Extension displays a result it creates a separate handoff record so the app can open that taxon. This record contains only the selected Wikidata Q-ID and a timestamp. It stays on your device until the app next reads it. The app then removes the record and ignores it if it is more than one hour old.
 
 iOS may separately retain HTTPS responses in its system URL cache and remove them automatically. Taxon Bridge does not use iCloud or another cloud service to synchronize its data.
 

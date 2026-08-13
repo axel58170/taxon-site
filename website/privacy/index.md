@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Privacy Policy — Taxon Bridge
-description: Taxon Bridge privacy policy.
+description: How Taxon Bridge handles lookup information and data stored on your device.
 document: true
 current_nav: privacy
 footer_link: support
@@ -11,68 +11,77 @@ footer_link: support
 
 # Taxon Bridge Privacy Policy
 
-<p class="meta"><strong>Effective date:</strong> 24 July 2026</p>
+<p class="meta"><strong>Effective date:</strong> 13 August 2026</p>
 
-Taxon Bridge is designed to look up biological names without an account, advertising, analytics, or user tracking. This policy explains the information processed when you use the app, Share Extension, or Shortcuts actions.
+## Privacy at a glance
 
-## Information you provide
+Taxon Bridge has no account, advertising, analytics, tracking, or developer server. Your settings and recent results are stored on your device.
 
-When you search for a common or scientific name, Taxon Bridge processes the lookup text or web link and your configured output-language codes. Input can be entered in the app, shared through the iOS Share Sheet, or supplied to a Shortcut.
+For an online lookup, the app sends the information needed to find the matching taxon and its names directly to Catalogue of Life and Wikimedia services. Those services receive ordinary connection information and may retain it under their own privacy policies—normally up to 30 days on GBIF infrastructure and up to 90 days on Wikimedia services, subject to their published exceptions.
 
-The Share Extension reads only text or a web URL that you explicitly share with it. It does not retain or modify the source item. For a supported Merlin Bird ID species-page URL, Taxon Bridge extracts the eBird species code from the URL.
+## What you share for a lookup
 
-## External naming services
+When you look up a common or scientific name, Taxon Bridge uses the text or web link you provide and the languages you have selected. You can enter a lookup in the app, share it through the iOS Share Sheet, or supply it to a Shortcut.
 
-Taxon Bridge sends lookup information over HTTPS to services needed to find a taxon and retrieve its names and other details:
+The Share Extension reads only text or a web URL that you explicitly share with it. It does not change the item you shared. The lookup text or link and its result may be stored on your device as described below.
 
-- Catalogue of Life infrastructure at `api.checklistbank.org` normally receives the original lookup text first, along with scientific names or Catalogue of Life identifiers required to retrieve taxonomic and vernacular-name data.
-- Wikidata at `www.wikidata.org` and `query.wikidata.org` receives the original lookup text when fallback discovery is needed. It also receives configured language codes, bounded candidate Q-IDs, scientific names, and Q-IDs needed for taxon verification, localized names, and Wikipedia links. For a supported Merlin species-page URL, Wikidata receives the extracted eBird species code in an exact `P3444` lookup.
+For a supported Merlin Bird ID species-page URL, Taxon Bridge extracts the eBird species code from the URL. For a supported localized Wikipedia article URL, Taxon Bridge extracts the article title and asks that Wikipedia site’s structured API for its linked Wikidata ID.
 
-Search text is transmitted in HTTPS query parameters and may therefore appear in those providers’ server logs. The providers also receive ordinary connection information such as your IP address, request time, and the app’s User-Agent. Taxon Bridge does not operate an intermediary server and does not receive those provider logs.
+## Online services used for a lookup
 
-These independent services process requests under their own terms and privacy practices:
+For online lookups, Taxon Bridge sends the information needed to find the matching taxon and its names directly to the services below. These requests use HTTPS.
+
+- Catalogue of Life infrastructure at `api.checklistbank.org` normally receives the original lookup text first, along with scientific names or Catalogue of Life identifiers needed to retrieve classification and names. A supported Wikipedia article URL bypasses this text search.
+- The localized Wikipedia host from a supported article URL receives the decoded article title in a structured metadata request. Taxon Bridge reads only the linked Wikidata ID; it does not download or parse the article HTML.
+- Wikidata at `www.wikidata.org` and `query.wikidata.org` receives the original lookup text when fallback search is needed. It also receives selected language codes, bounded candidate Q-IDs, scientific names, and Q-IDs needed to check identities and retrieve names and Wikipedia links. For a supported Merlin species-page URL, Wikidata receives the extracted eBird species code in an exact `P3444` lookup.
+- After the app displays a taxon, Wikidata receives its Q-ID to find a representative image. Wikimedia Commons receives the media filename needed to return attribution and a display-sized thumbnail. The names remain visible if no image is requested or available.
+
+The services receive the request data above and ordinary connection information such as your IP address, request time, and the app’s User-Agent. Search text is included in HTTPS query parameters and may appear in service logs. Taxon Bridge has no intermediary server and cannot inspect or delete those logs.
+
+Catalogue of Life’s API is provided on GBIF infrastructure. GBIF says technical information collected when its internet services are used is normally deleted after 30 days. Wikimedia says automatically collected personal information is normally deleted, aggregated, or de-identified within 90 days. Both providers describe exceptions in their policies, including circumstances in which information may be retained longer.
 
 - [Catalogue of Life](https://www.catalogueoflife.org/)
+- [GBIF privacy policy](https://www.gbif.org/terms/privacy-policy)
 - [Wikimedia privacy policy](https://foundation.wikimedia.org/wiki/Policy:Privacy_policy)
+- [Wikimedia data retention guidelines](https://foundation.wikimedia.org/wiki/Legal:Wikimedia_Foundation_Data_Retention_Guidelines/en)
 
 Taxon Bridge sends no app-created account identifier, advertising identifier, contact details, or precise location to these services.
 
-## Information stored on your device
+## What stays on your device
 
-Taxon Bridge stores the following in the app’s shared iOS container so the main app and Share Extension can use the same configuration and recent results:
+Taxon Bridge stores the following in its shared iOS container so the app and Share Extension can use the same settings and recent results:
 
 - your ordered language codes, scientific-name position, and preferred Wikipedia language;
-- normalized lookup text and the ordered languages used for the lookup;
+- normalized lookup text, canonicalized Wikipedia host-and-title URLs with query parameters and fragments removed, and the ordered languages used for each lookup;
 - lookup timestamps;
-- matching or candidate taxa, including Q-IDs, scientific names, ranks, localized names and attribution, and Wikipedia links.
+- matching or candidate taxa, including Q-IDs, scientific names, ranks, names and their sources, and Wikipedia links;
+- representative image bytes, source metadata, attribution, and retrieval timestamps.
 
-Cached results no older than 30 days may be used when a naming service is unavailable. Cache records remain on the device until you choose **Clear recent results**, remove the app, or iOS otherwise removes the app container. Clearing recent results does not reset your language preferences.
+Fresh lookup results may be reused for 30 days. Records remain on the device until you choose **Clear recent results**, delete Taxon Bridge, or iOS otherwise removes its container. Clearing recent results does not reset your language settings.
 
-Taxon Bridge does not use iCloud or another cloud service to synchronize this information.
+Representative image metadata and display-sized image bytes are cached for 30 days in a cache limited to 64 MiB and 128 entries. An older image may remain available offline for up to 90 days. A missing-image result is stored for 24 hours to avoid repeated requests. **Clear recent results** also removes this image cache.
+
+When you open a Share Extension result in the app, the extension temporarily stores only the selected Wikidata Q-ID and a timestamp. The app removes this handoff when it reads it, and it expires after one hour.
+
+iOS may separately retain HTTPS responses in its system URL cache and remove them automatically. Taxon Bridge does not use iCloud or another cloud service to synchronize its data.
 
 ## Clipboard, Shortcuts, and external links
 
-Taxon Bridge writes names to the iOS clipboard only when you choose a copy action. Clipboard handling and any access by other apps are controlled by iOS.
+Taxon Bridge writes names to the iOS clipboard only when you choose a copy action. Clipboard handling and access by other apps are controlled by iOS.
 
 Inputs and outputs used with Siri or Shortcuts may also be processed by Apple under Apple’s privacy policies.
 
-When you open Wikipedia, Catalogue of Life, citation, licence, or contribution links, iOS opens the destination in your browser. The destination receives ordinary web request information under its own privacy policy.
+When you open Wikipedia, Catalogue of Life, citation, licence, contribution, or privacy-policy links, iOS opens the destination in your browser. The destination receives ordinary web request information under its own privacy policy.
 
-## Information Taxon Bridge does not collect
+## What Taxon Bridge does not do
 
-Taxon Bridge has:
+Taxon Bridge has no account or sign-in, advertising or analytics SDK, tracking, sale of personal information, push notifications, cloud backend, or developer-operated server. It does not share information with unrelated third parties. Catalogue of Life and Wikimedia are used only for lookups you request.
 
-- no account or sign-in;
-- no advertising or analytics SDK;
-- no tracking or sale of personal information;
-- no push notifications or cloud backend;
-- no access to contacts, photos, camera, microphone, location, health data, or the advertising identifier.
+Taxon Bridge does not access your contacts, photos, camera, microphone, location, health data, or advertising identifier.
 
-The app does not share information with unrelated third parties. Catalogue of Life and Wikimedia are used only as the external data sources necessary to perform requested lookups.
+## Control your data
 
-## Your choices
-
-You can clear cached lookups in **Settings → Offline data → Clear recent results**. You can change or remove configured languages in Settings. Deleting Taxon Bridge removes its app container from the device according to normal iOS behavior.
+You can clear stored lookups and images in **Settings → Offline data → Clear recent results**. You can change or remove selected languages in Settings. Deleting Taxon Bridge removes its app container from the device according to normal iOS behavior.
 
 Avoid entering confidential or personal information as a biological-name search.
 

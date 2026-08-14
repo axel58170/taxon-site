@@ -1,6 +1,6 @@
 # Website publication
 
-The Taxon Bridge product, privacy, and support site is served by GitHub Pages.
+The Taxon Translate product, privacy, and support site is served by GitHub Pages.
 Page content is Markdown in `website/`; Jekyll combines it with the layouts and
 includes in that directory to generate the published HTML.
 

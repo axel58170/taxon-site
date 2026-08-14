@@ -1,6 +1,6 @@
 # Customer-facing language
 
-Taxon Bridge helps people find what an animal, plant, fungus, or other taxon is
+Taxon Translate helps people find what an animal, plant, fungus, or other taxon is
 called in their chosen languages. Describe that outcome before describing the
 interface used to reach it.
 
@@ -10,10 +10,10 @@ interface used to reach it.
   up names from a Wikipedia page**, or **Look up a bird from Merlin**.
 - Do not use **Share selected text**, **Share a Wikipedia article**, or similar
   Share Sheet instructions as feature names. Sharing is only the current
-  transport into Taxon Bridge.
+  transport into Taxon Translate.
 - In procedural instructions, use the exact iOS labels **Share** and **Share
   Sheet** when those steps are necessary. Explain the lookup outcome first.
-- When Taxon Bridge appears over another app, say that the person can view the
+- When Taxon Translate appears over another app, say that the person can view the
   names and then close the result to remain in or return to what they were
   doing. Do not imply that they permanently leave, transfer from, or “continue
   from” the source app.
@@ -44,7 +44,7 @@ interface used to reach it.
   action in plain language and do not reuse its terminology as prose.
 - Prefer **animal, plant, or fungus** in introductory copy. Use **taxon** where
   scientific precision is useful or where the interface itself uses the term.
-- Keep scientific names, common names, and identity distinct. Taxon Bridge
+- Keep scientific names, common names, and identity distinct. Taxon Translate
   shows names recorded by its sources; it does not invent or automatically
   translate missing common names.
 

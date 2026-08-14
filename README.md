@@ -1,6 +1,6 @@
-# Taxon Bridge website
+# Taxon Translate website
 
-This repository contains the public Taxon Bridge product, privacy, and support
+This repository contains the public Taxon Translate product, privacy, and support
 website. Its content is written in Markdown under `website/`, built locally with
 Jekyll, and published from the generated `gh-pages` branch. Shared HTML is kept
 in layouts and includes, so ordinary text changes do not require editing page

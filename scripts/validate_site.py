@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the generated Taxon Bridge website using only Python's stdlib."""
+"""Validate the generated Taxon Translate website using only Python's stdlib."""
 
 from __future__ import annotations
 

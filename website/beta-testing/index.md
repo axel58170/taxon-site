@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Beta testing — Taxon Bridge
-description: A practical guide for testing Taxon Bridge on iPhone through TestFlight.
+title: Beta testing — Taxon Translate
+description: A practical guide for testing Taxon Translate on iPhone through TestFlight.
 document: true
 footer_link: privacy
 ---
@@ -10,12 +10,12 @@ footer_link: privacy
 
 # Beta testing guide
 
-Thank you for testing Taxon Bridge. These checks focus on real iPhone behavior
+Thank you for testing Taxon Translate. These checks focus on real iPhone behavior
 that automated tests cannot reproduce completely. You do not need to complete
 every section: report which sections you tried and anything that surprised you.
 
 Before starting, install the current build from TestFlight and launch Taxon
-Bridge once. In TestFlight, note the app version and build number so they can be
+Translate once. In TestFlight, note the app version and build number so they can be
 included in a report.
 
 ## Everyday lookup
@@ -28,13 +28,13 @@ included in a report.
    search and confirm the result follows those settings.
 4. Copy one name and then all available names, paste them elsewhere, and check
    the order and spelling.
-5. Open an available Wikipedia link, return to Taxon Bridge, and start another
+5. Open an available Wikipedia link, return to Taxon Translate, and start another
    search.
 6. Relaunch the app and confirm settings and recent results persist.
 
 ## Bundled names, caching, and Airplane Mode
 
-Taxon Bridge includes a small vocabulary that works without a connection. It
+Taxon Translate includes a small vocabulary that works without a connection. It
 also stores successful recent lookups on the device. Run these steps in order
 to test the two behaviors separately.
 
@@ -46,12 +46,12 @@ to test the two behaviors separately.
    those details normally come from the network.
 3. Still offline, search for the non-bundled scientific name `Equus zebra`,
    provided you have not previously used it on this installation. Confirm Taxon
-   Bridge reports an understandable connection problem instead of hanging or
+   Translate reports an understandable connection problem instead of hanging or
    showing an unrelated result. If you have used that name, record and use a
    different non-bundled scientific name for the remaining steps.
 4. Disable Airplane Mode and retry that exact query. Confirm the expected taxon
    appears, including in **Recent taxa**.
-5. Relaunch Taxon Bridge, enable Airplane Mode again, and repeat the query.
+5. Relaunch Taxon Translate, enable Airplane Mode again, and repeat the query.
    Confirm the cached result and its name ordering remain available. If an image
    loaded online, check whether it remains available too.
 6. Open the same result from **Recent taxa** while still offline.
@@ -59,14 +59,14 @@ to test the two behaviors separately.
    removed from **Recent taxa**, while `Panthera leo` continues to work in
    Airplane Mode.
 
-iOS may independently retain recent web responses even after Taxon Bridge
+iOS may independently retain recent web responses even after Taxon Translate
 clears its own cache. If a cleared query still works offline, report that
 outcome; it does not necessarily mean clearing failed.
 
 ## Share Extension
 
 1. In Safari or Notes, select only a biological name, choose **Share**, then
-   choose **Taxon Bridge**.
+   choose **Taxon Translate**.
 2. Confirm the extension receives the selected text, finds the matching taxon,
    and displays names in the same configuration as the main app.
 3. Try both a common name and a scientific name. If a result is ambiguous,
@@ -78,16 +78,16 @@ outcome; it does not necessarily mean clearing failed.
 6. Still offline, share `Panthera leo`, then share a never-used non-bundled
    taxon. The bundled taxon should appear; the uncached name should fail clearly
    rather than hang.
-7. If you use Merlin Bird ID, share a public species page to Taxon Bridge and
+7. If you use Merlin Bird ID, share a public species page to Taxon Translate and
    confirm the expected bird appears.
 
-Apple Books does not currently offer Taxon Bridge's Share Extension for selected
+Apple Books does not currently offer Taxon Translate's Share Extension for selected
 book text. Use the [Shortcut procedure on the Support page]({{ '/support/#apple-books-use-a-shortcut' | relative_url }})
 for that scenario.
 
 ## Shortcuts
 
-After launching Taxon Bridge once:
+After launching Taxon Translate once:
 
 1. Run **Resolve Taxon** with `Pernis apivorus`.
 2. Pass its result to **Get Taxon Name** with the language code `fr`.
@@ -114,7 +114,7 @@ Send private reports to [taxon@axelgraff.fr](mailto:taxon@axelgraff.fr), or
 file a non-sensitive report in [GitHub Issues](https://github.com/axel58170/taxon-site/issues).
 Please include:
 
-- Taxon Bridge version and build from TestFlight;
+- Taxon Translate version and build from TestFlight;
 - iPhone model and iOS version;
 - the section and steps tested;
 - the exact taxon query or public species-page URL, when safe to share;

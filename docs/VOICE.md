@@ -1,6 +1,6 @@
 # Editorial voice
 
-This guide describes how good Taxon Bridge copy sounds. Follow
+This guide describes how good Taxon Translate copy sounds. Follow
 [CONTENT_GUIDELINES.md](CONTENT_GUIDELINES.md) for the hard content rules.
 
 ## Plain, concrete, and knowledgeable
@@ -44,7 +44,7 @@ only when the reader needs that interface label to perform a step.
 Use the real-world object for the goal: **species, bird, animal, plant,** or
 **fungus**. Use **name** for text the person encounters, enters, or selects:
 
-> Select its name and send it to Taxon Bridge.
+> Select its name and send it to Taxon Translate.
 
 Use **taxon** only where the scientific distinction matters to the reader.
 

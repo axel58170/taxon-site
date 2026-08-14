@@ -235,6 +235,14 @@ h3 {
   grid-template-columns: minmax(18rem, 0.7fr) minmax(0, 1fr);
 }
 
+.workflow-section-text-only {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.workflow-section-text-only .workflow-copy {
+  max-width: 48rem;
+}
+
 .workflow-section-reversed .workflow-copy {
   grid-column: 2;
 }

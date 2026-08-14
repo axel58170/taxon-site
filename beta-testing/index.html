@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A practical guide for testing Taxon Bridge on iPhone through TestFlight.">
-  <title>Beta testing — Taxon Bridge</title>
+  <meta name="description" content="A practical guide for testing Taxon Translate on iPhone through TestFlight.">
+  <title>Beta testing — Taxon Translate</title>
   <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="brand" href="/" aria-label="Taxon Bridge home">
+    <a class="brand" href="/" aria-label="Taxon Translate home">
       <img src="/assets/app-icon.png" alt="" width="40" height="40">
-      <span>Taxon Bridge</span>
+      <span>Taxon Translate</span>
     </a>
     <nav aria-label="Main navigation">
       <ul>
@@ -27,12 +27,12 @@
 
 <h1 id="beta-testing-guide">Beta testing guide</h1>
 
-<p>Thank you for testing Taxon Bridge. These checks focus on real iPhone behavior
+<p>Thank you for testing Taxon Translate. These checks focus on real iPhone behavior
 that automated tests cannot reproduce completely. You do not need to complete
 every section: report which sections you tried and anything that surprised you.</p>
 
 <p>Before starting, install the current build from TestFlight and launch Taxon
-Bridge once. In TestFlight, note the app version and build number so they can be
+Translate once. In TestFlight, note the app version and build number so they can be
 included in a report.</p>
 
 <h2 id="everyday-lookup">Everyday lookup</h2>
@@ -46,14 +46,14 @@ not choose silently.</li>
 search and confirm the result follows those settings.</li>
   <li>Copy one name and then all available names, paste them elsewhere, and check
 the order and spelling.</li>
-  <li>Open an available Wikipedia link, return to Taxon Bridge, and start another
+  <li>Open an available Wikipedia link, return to Taxon Translate, and start another
 search.</li>
   <li>Relaunch the app and confirm settings and recent results persist.</li>
 </ol>
 
 <h2 id="bundled-names-caching-and-airplane-mode">Bundled names, caching, and Airplane Mode</h2>
 
-<p>Taxon Bridge includes a small vocabulary that works without a connection. It
+<p>Taxon Translate includes a small vocabulary that works without a connection. It
 also stores successful recent lookups on the device. Run these steps in order
 to test the two behaviors separately.</p>
 
@@ -66,12 +66,12 @@ names appear promptly. A Wikipedia link or image may be unavailable because
 those details normally come from the network.</li>
   <li>Still offline, search for the non-bundled scientific name <code class="language-plaintext highlighter-rouge">Equus zebra</code>,
 provided you have not previously used it on this installation. Confirm Taxon
-Bridge reports an understandable connection problem instead of hanging or
+Translate reports an understandable connection problem instead of hanging or
 showing an unrelated result. If you have used that name, record and use a
 different non-bundled scientific name for the remaining steps.</li>
   <li>Disable Airplane Mode and retry that exact query. Confirm the expected taxon
 appears, including in <strong>Recent taxa</strong>.</li>
-  <li>Relaunch Taxon Bridge, enable Airplane Mode again, and repeat the query.
+  <li>Relaunch Taxon Translate, enable Airplane Mode again, and repeat the query.
 Confirm the cached result and its name ordering remain available. If an image
 loaded online, check whether it remains available too.</li>
   <li>Open the same result from <strong>Recent taxa</strong> while still offline.</li>
@@ -80,7 +80,7 @@ removed from <strong>Recent taxa</strong>, while <code class="language-plaintext
 Airplane Mode.</li>
 </ol>
 
-<p>iOS may independently retain recent web responses even after Taxon Bridge
+<p>iOS may independently retain recent web responses even after Taxon Translate
 clears its own cache. If a cleared query still works offline, report that
 outcome; it does not necessarily mean clearing failed.</p>
 
@@ -88,7 +88,7 @@ outcome; it does not necessarily mean clearing failed.</p>
 
 <ol>
   <li>In Safari or Notes, select only a biological name, choose <strong>Share</strong>, then
-choose <strong>Taxon Bridge</strong>.</li>
+choose <strong>Taxon Translate</strong>.</li>
   <li>Confirm the extension receives the selected text, finds the matching taxon,
 and displays names in the same configuration as the main app.</li>
   <li>Try both a common name and a scientific name. If a result is ambiguous,
@@ -100,17 +100,17 @@ that same text. Confirm the extension can use the shared cached result.</li>
   <li>Still offline, share <code class="language-plaintext highlighter-rouge">Panthera leo</code>, then share a never-used non-bundled
 taxon. The bundled taxon should appear; the uncached name should fail clearly
 rather than hang.</li>
-  <li>If you use Merlin Bird ID, share a public species page to Taxon Bridge and
+  <li>If you use Merlin Bird ID, share a public species page to Taxon Translate and
 confirm the expected bird appears.</li>
 </ol>
 
-<p>Apple Books does not currently offer Taxon Bridge’s Share Extension for selected
+<p>Apple Books does not currently offer Taxon Translate’s Share Extension for selected
 book text. Use the <a href="/support/#apple-books-use-a-shortcut">Shortcut procedure on the Support page</a>
 for that scenario.</p>
 
 <h2 id="shortcuts">Shortcuts</h2>
 
-<p>After launching Taxon Bridge once:</p>
+<p>After launching Taxon Translate once:</p>
 
 <ol>
   <li>Run <strong>Resolve Taxon</strong> with <code class="language-plaintext highlighter-rouge">Pernis apivorus</code>.</li>
@@ -140,7 +140,7 @@ file a non-sensitive report in <a href="https://github.com/axel58170/taxon-site/
 Please include:</p>
 
 <ul>
-  <li>Taxon Bridge version and build from TestFlight;</li>
+  <li>Taxon Translate version and build from TestFlight;</li>
   <li>iPhone model and iOS version;</li>
   <li>the section and steps tested;</li>
   <li>the exact taxon query or public species-page URL, when safe to share;</li>
@@ -156,7 +156,7 @@ copyrighted reading passages, or screenshots containing sensitive content.</p>
   </main>
 
   <footer class="site-footer">
-    <p>Taxon Bridge</p>
+    <p>Taxon Translate</p>
     <p><a href="/privacy/">Privacy</a></p>
   </footer>
 </body>

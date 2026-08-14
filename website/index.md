@@ -1,13 +1,13 @@
 ---
 layout: home
-title: Taxon Translate — one name, many languages
+title: Taxon Translate — One name, many languages
 description: Taxon Translate shows the sourced names of animals, plants, and fungi in all the languages you choose.
 ---
 
 <section class="hero" aria-labelledby="hero-title">
   <div markdown="1">
 
-<p class="eyebrow">Biological names, bridged</p>
+<p class="eyebrow" id="hero-eyebrow">Common and scientific names</p>
 
 # One name, many languages. {#hero-title}
 

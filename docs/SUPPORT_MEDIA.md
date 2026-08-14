@@ -17,17 +17,14 @@ combining them into the animation.
 
 - `website/assets/support/language-order.webp`: language order and scientific
   name placement.
-- `website/assets/support/share-selected-name-poster.webp`: reduced-motion
-  fallback for the selected-text walkthrough.
-- `website/assets/support/share-merlin-page-poster.webp`: reduced-motion
-  fallback for the Merlin species-page walkthrough.
+- `website/assets/support/shortcut-actions.webp`: available Shortcut actions.
 
 ## Published walkthroughs
 
-- `website/assets/support/share-selected-name.gif`: selecting a biological
-  name, opening the Share Sheet, and reviewing the lookup result.
-- `website/assets/support/share-merlin-page.gif`: sharing a public Merlin Bird
-  ID species page and reviewing the lookup result.
+No animated walkthroughs are currently published. The former Share Sheet
+captures showed the superseded Taxon Bridge name and were withdrawn together
+with their poster frames. Publish replacements only after the complete Taxon
+Translate flows have been captured and reviewed using the workflow below.
 
 The captures must obscure suggested contacts, account information, location,
 notifications, browsing history, and other personal information. Keep clips
@@ -73,10 +70,11 @@ The preparation script targets 402 pixels wide, 6 frames per second, and a
 1.5 MB GIF limit. If it exceeds the limit, shorten idle time first; reduce
 dimensions or frame rate only when the sequence remains legible.
 
-## Next useful walkthrough
+## Next useful walkthroughs
 
-A **Lookup Species** walkthrough would add information that the two existing
-Share Sheet demonstrations do not cover. Its shot list should be:
+First recapture the selected-text and Merlin species-page Share Sheet flows with
+the Taxon Translate name. A **Lookup Species** walkthrough would then add a
+different invocation path. Its shot list should be:
 
 1. Select a species name in Books and tap **Copy**.
 2. Run **Lookup Species** using one representative invocation method.

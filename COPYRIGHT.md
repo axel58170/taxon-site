@@ -12,5 +12,5 @@ that material.
 Third-party names, trademarks, interfaces, screenshots, and media remain the
 property of their respective owners. Their appearance is for identification,
 explanation, or demonstration and does not transfer ownership or grant reuse
-rights. Taxon Bridge is not affiliated with or endorsed by Merlin Bird ID,
+rights. Taxon Translate is not affiliated with or endorsed by Merlin Bird ID,
 eBird, the Cornell Lab of Ornithology, Wikimedia, or Apple.

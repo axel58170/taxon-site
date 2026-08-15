@@ -85,15 +85,3 @@ To look up a species from Books, add the **Lookup Species** Shortcut once. Selec
 </article>
   </div>
 </section>
-
-<section class="beyond-birds" aria-labelledby="beyond-title" markdown="1">
-
-<p class="eyebrow">The whole living world</p>
-
-## More than birds {#beyond-title}
-
-The same lookup works for plants, fungi, insects, and other animals.
-
-<p class="organism-examples" aria-label="Examples of organisms Taxon Translate can look up"><span>Plants</span><span>Fungi</span><span>Insects</span><span>Other animals</span></p>
-
-</section>

@@ -21,10 +21,16 @@ combining them into the animation.
 
 ## Published walkthroughs
 
-No animated walkthroughs are currently published. The former Share Sheet
-captures showed the superseded Taxon Bridge name and were withdrawn together
-with their poster frames. Publish replacements only after the complete Taxon
-Translate flows have been captured and reviewed using the workflow below.
+- `website/assets/support/app-search-house-sparrow.gif`: English House Sparrow
+  search from Recent Searches to the multilingual result.
+- `website/assets/support/app-search-house-sparrow-poster.webp`: completed
+  English, French, Dutch, and scientific-name result shown before playback and
+  when motion is reduced.
+
+The former Share Sheet captures showed the superseded Taxon Bridge name and were
+withdrawn together with their poster frames. Publish replacements only after
+the complete Taxon Translate flows have been captured and reviewed using the
+workflow below.
 
 The captures must obscure suggested contacts, account information, location,
 notifications, browsing history, and other personal information. Keep clips

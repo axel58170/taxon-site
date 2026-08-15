@@ -198,23 +198,12 @@ h3 {
   padding: clamp(1.3rem, 5vw, 4rem);
 }
 
-.birding-story,
 .workflow-section,
 .story-grid,
+.ways-section,
 .features-section,
 .beyond-birds {
   margin-block: clamp(4rem, 9vw, 8rem);
-}
-
-.birding-story {
-  max-width: 52rem;
-  padding: clamp(2rem, 6vw, 5rem);
-  border-radius: 1.75rem;
-  background: var(--soft);
-}
-
-.birding-story .section-copy {
-  max-width: 42rem;
 }
 
 .section-copy h2,
@@ -282,6 +271,10 @@ h3 {
   gap: 1rem;
 }
 
+.ways-section .story-grid {
+  margin-block: 1.5rem 0;
+}
+
 .short-story {
   padding: clamp(1.5rem, 4vw, 2.5rem);
   border: 1px solid var(--line);
@@ -293,7 +286,7 @@ h3 {
   grid-column: 1 / -1;
 }
 
-.short-story h2 {
+.short-story h3 {
   margin-top: 0;
 }
 
@@ -529,7 +522,6 @@ code {
     justify-self: start;
   }
 
-  .birding-story,
   .workflow-section,
   .workflow-section-reversed {
     grid-template-columns: 1fr;
@@ -541,10 +533,6 @@ code {
 
   .short-story:last-child {
     grid-column: auto;
-  }
-
-  .birding-story {
-    padding: 1.5rem;
   }
 
   .workflow-section-reversed .workflow-copy,

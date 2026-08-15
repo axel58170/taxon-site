@@ -92,8 +92,8 @@ To look up a species from Books, add the **Lookup Species** Shortcut once. Selec
 
 ## More than birds {#beyond-title}
 
-Taxon Translate is not limited to birds. A plant on a gardening website, a mushroom mentioned in a recipe, or an unfamiliar animal in an article can all be looked up in exactly the same way.
+The same lookup works for plants, fungi, insects, and other animals.
 
-<p class="organism-examples" aria-label="Examples of organisms Taxon Translate can look up"><span>Plants</span><span>Fungi</span><span>Animals</span></p>
+<p class="organism-examples" aria-label="Examples of organisms Taxon Translate can look up"><span>Plants</span><span>Fungi</span><span>Insects</span><span>Other animals</span></p>
 
 </section>

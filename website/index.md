@@ -65,10 +65,10 @@ Taxon Translate shows the names in your selected languages in a pop-up over the 
 {% include motion-figure.html
   class="feature-media share-sheet-media"
   animation="/assets/support/share-wikipedia-page.gif"
-  animation_alt="Taxon Translate opening from the Share Sheet on a Dutch Wikipedia article about hazel and displaying its English, French, Dutch, and scientific names"
+  animation_alt="Hazel’s English, French, Dutch, and scientific names appear in Taxon Translate after choosing Share from an English Wikipedia article and selecting Taxon Translate in the Share Sheet"
   poster="/assets/support/share-wikipedia-page-poster.webp"
-  poster_alt="Taxon Translate displaying Hazel, Noisetier, Hazelaar, and Corylus avellana after a Wikipedia article was shared"
-  duration_ms="9000"
+  poster_alt="Taxon Translate showing Hazel, Noisetier, Hazelaar, and Corylus avellana after a lookup from Wikipedia"
+  duration_ms="10500"
 %}
 
 <p class="note">Taxon Translate is not affiliated with or endorsed by Merlin Bird ID, eBird, or the Cornell Lab of Ornithology.</p>

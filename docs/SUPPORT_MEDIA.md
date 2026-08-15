@@ -29,7 +29,8 @@ troubleshooting in text rather than combining them into the animation.
   English, French, Dutch, and scientific-name result shown before playback and
   when motion is reduced.
 - `website/assets/support/share-wikipedia-page.gif`: English Share Sheet flow
-  from a public Dutch Wikipedia article to the multilingual hazel result.
+  from a public English Wikipedia article to the multilingual hazel result,
+  with visible markers on the Safari More, Share, and Taxon Translate taps.
 - `website/assets/support/share-wikipedia-page-poster.webp`: completed Hazel,
   Noisetier, Hazelaar, and scientific-name result shown before playback and when
   motion is reduced.

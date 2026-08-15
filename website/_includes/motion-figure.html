@@ -1,6 +1,6 @@
 <figure class="{{ include.class | escape }}">
-  <img class="motion-demo" src="{{ include.animation | relative_url }}" alt="{{ include.animation_alt | escape }}" width="402" height="874" loading="lazy">
+  <img class="motion-demo" src="{{ include.animation | relative_url }}" alt="{{ include.animation_alt | escape }}" width="402" height="874" loading="lazy" hidden>
   <img class="motion-fallback" src="{{ include.poster | relative_url }}" alt="{{ include.poster_alt | escape }}" width="402" height="874" loading="lazy">
-  <button class="motion-replay" type="button" hidden>Play again</button>
+  <button class="motion-control" type="button" data-duration-ms="{{ include.duration_ms | escape }}" data-play-label="Play animation" data-stop-label="Stop animation" data-replay-label="Play again" hidden>Play animation</button>
   <figcaption>{{ include.caption | escape }}</figcaption>
 </figure>

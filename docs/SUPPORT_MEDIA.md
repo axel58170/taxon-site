@@ -67,9 +67,10 @@ beside the Merlin demonstration.
    review. Keep raw recordings and intermediate frames out of Git.
 
 The preparation script targets 402 pixels wide, 6 frames per second, no
-automatic looping, and a 1.5 MB GIF limit. If it exceeds the limit, shorten idle
-time first; reduce dimensions or frame rate only when the sequence remains
-legible.
+automatic looping, and a 1.5 MB GIF limit. Published walkthroughs show their
+poster by default and provide controls to play one pass or stop it. If a GIF
+exceeds the limit, shorten idle time first; reduce dimensions or frame rate only
+when the sequence remains legible.
 
 ## Next useful walkthroughs
 

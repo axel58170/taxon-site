@@ -437,11 +437,27 @@ h3 {
   line-height: 1.45;
 }
 
-.motion-fallback {
+.motion-demo {
   display: none !important;
 }
 
-.motion-replay {
+.motion-fallback {
+  display: block !important;
+}
+
+.motion-playing .motion-demo {
+  display: block !important;
+}
+
+.motion-playing .motion-fallback {
+  display: none !important;
+}
+
+.feature-media img[hidden] {
+  display: none !important;
+}
+
+.motion-control {
   margin-top: 0.9rem;
   padding: 0.62rem 0.9rem;
   border: 1px solid var(--line);
@@ -463,7 +479,7 @@ h3 {
     display: block !important;
   }
 
-  .motion-replay {
+  .motion-control {
     display: none;
   }
 }

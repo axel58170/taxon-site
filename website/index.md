@@ -40,6 +40,7 @@ Here, a search for **House Sparrow** brings together its English, French, Dutch,
   animation_alt="Animated Taxon Translate search for House Sparrow, followed by its English, French, Dutch, and scientific names"
   poster="/assets/support/app-search-house-sparrow-poster.webp"
   poster_alt="Taxon Translate showing House Sparrow, Moineau domestique, Huismus, and Passer domesticus"
+  duration_ms="13000"
   caption="Search for House Sparrow and see its names together: House Sparrow, Moineau domestique, Huismus, and Passer domesticus."
 %}
 </section>

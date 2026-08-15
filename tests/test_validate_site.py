@@ -28,7 +28,7 @@ class GeneratedSiteValidationTests(unittest.TestCase):
             '<main id="main"><a href="support/#which-languages-can-i-add">FAQ</a>'
             '<img class="motion-demo" src="assets/demo.gif" alt="Animated steps">'
             '<img class="motion-fallback" src="assets/poster.webp" alt="Still result">'
-            '<button class="motion-replay">Play again</button></main>',
+            '<button class="motion-control">Play animation</button></main>',
             encoding="utf-8",
         )
         (self.site / "privacy/index.html").write_text('<main id="main"></main>', encoding="utf-8")
@@ -57,7 +57,7 @@ class GeneratedSiteValidationTests(unittest.TestCase):
             '<main id="main"><a href="/taxon-site/support/#which-languages-can-i-add">FAQ</a>'
             '<img class="motion-demo" src="/taxon-site/assets/demo.gif" alt="Animated steps">'
             '<img class="motion-fallback" src="/taxon-site/assets/poster.webp" alt="Still result">'
-            '<button class="motion-replay">Play again</button></main>',
+            '<button class="motion-control">Play animation</button></main>',
             encoding="utf-8",
         )
 
@@ -68,7 +68,7 @@ class GeneratedSiteValidationTests(unittest.TestCase):
             '<main id="main"><a href="/support/#which-languages-can-i-add">FAQ</a>'
             '<img class="motion-demo" src="/assets/demo.gif" alt="Animated steps">'
             '<img class="motion-fallback" src="/assets/poster.webp" alt="Still result">'
-            '<button class="motion-replay">Play again</button></main>',
+            '<button class="motion-control">Play animation</button></main>',
             encoding="utf-8",
         )
 
@@ -90,14 +90,14 @@ class GeneratedSiteValidationTests(unittest.TestCase):
         homepage = self.site / "index.html"
         homepage.write_text(
             homepage.read_text(encoding="utf-8").replace(
-                '<button class="motion-replay">Play again</button>', ""
+                '<button class="motion-control">Play animation</button>', ""
             ),
             encoding="utf-8",
         )
 
         errors = validate(self.site)
 
-        self.assertTrue(any("motion demos and replay controls must be paired" in error for error in errors))
+        self.assertTrue(any("motion demos and playback controls must be paired" in error for error in errors))
 
 
 if __name__ == "__main__":

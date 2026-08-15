@@ -53,12 +53,12 @@ Want to know what, say, a **House Sparrow** is called in, for example, French or
 
 ### Using the Share Sheet {#share-sheet-title}
 
-Choose Taxon Translate in the Share Sheet to:
+Find translations:
 
-- look up a species while reading;
-- look up a bird from Merlin;
-- look up a species from Wikipedia; or
-- look up a species with Visual Intelligence after opening its Wikipedia page.
+- while reading in Safari or another app;
+- while identifying a bird with Merlin Bird ID;
+- while reading about a species on Wikipedia; or
+- after identifying a species with Visual Intelligence and opening the linked Wikipedia page.
 
 Taxon Translate shows the names in your selected languages in a pop-up over the other app.
 

@@ -31,7 +31,7 @@ description: Taxon Translate shows the sourced names of animals, plants, and fun
   <div class="workflow-section interface-showcase">
 <div class="workflow-copy" markdown="1">
 
-Want to know what a **House Sparrow** is called in French or Dutch? Enter any common or scientific name. Taxon Translate finds the matching animal, plant, or fungus and shows its names in the languages you selected.
+Want to know what, say, a **House Sparrow** is called in, for example, French or Dutch? Enter any common or scientific name. Taxon Translate finds the matching animal, plant, or fungus and shows its names in the languages you selected.
 
 </div>
 

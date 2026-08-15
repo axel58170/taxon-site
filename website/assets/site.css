@@ -256,10 +256,6 @@ h3 {
   background: var(--soft);
 }
 
-.short-story:last-child {
-  grid-column: 1 / -1;
-}
-
 .short-story h3 {
   margin-top: 0;
 }
@@ -442,10 +438,6 @@ code {
     grid-template-columns: 1fr;
   }
 
-  .short-story:last-child {
-    grid-column: auto;
-  }
-
   .workflow-section-reversed .workflow-copy,
   .workflow-section-reversed .feature-media {
     grid-row: auto;
@@ -480,10 +472,6 @@ code {
     background: rgb(20 45 48 / 78%);
   }
 
-  .button {
-    background: var(--accent);
-    color: #31170f;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

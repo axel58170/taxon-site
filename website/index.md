@@ -54,45 +54,27 @@ Want to know what a **House Sparrow** is called in French or Dutch? Enter any co
   </div>
 
   <div class="story-grid" aria-label="Ways to use Taxon Translate from other apps">
-<article class="short-story" aria-labelledby="share-title" markdown="1">
+<article class="short-story" aria-labelledby="share-sheet-title" markdown="1">
 
-### Look up a species while reading {#share-title}
+### Using the Share Sheet {#share-sheet-title}
 
-See an unfamiliar animal, plant, or fungus in Safari, Mail, or another app? Select its name and send it to Taxon Translate. The translations appear straight away. Close the pop-up when you are done and continue reading where you left off.
+Choose Taxon Translate in the Share Sheet to:
 
-</article>
-<article class="short-story" aria-labelledby="merlin-title" markdown="1">
+- look up a species while reading;
+- look up a bird from Merlin;
+- look up a species from Wikipedia; or
+- look up a species with Visual Intelligence after opening its Wikipedia page.
 
-### Look up a bird from Merlin {#merlin-title}
-
-After identifying a bird with Merlin, send the species to Taxon Translate to see its translations in your selected languages.
-
-Taxon Translate appears over Merlin. Close the pop-up when you are done and continue where you left off.
+Taxon Translate shows the names in your selected languages in a pop-up over the other app.
 
 <p class="note">Taxon Translate is not affiliated with or endorsed by Merlin Bird ID, eBird, or the Cornell Lab of Ornithology.</p>
 
 </article>
-<article class="short-story" aria-labelledby="wikipedia-title" markdown="1">
+<article class="short-story" aria-labelledby="shortcuts-title" markdown="1">
 
-### Look up a species from Wikipedia {#wikipedia-title}
+### Using Shortcuts {#shortcuts-title}
 
-Reading about an animal, plant, or fungus on Wikipedia? Send the article to Taxon Translate to see its translations in your selected languages.
-
-Taxon Translate appears over Wikipedia. Close the pop-up when you are done and continue where you left off.
-
-</article>
-<article class="short-story" aria-labelledby="visual-intelligence-title" markdown="1">
-
-### Look up a species with Visual Intelligence {#visual-intelligence-title}
-
-Use Visual Intelligence to identify an animal or plant, then open its Wikipedia page. From there, send the species to Taxon Translate to see its translations in your selected languages.
-
-</article>
-<article class="short-story" aria-labelledby="books-title" markdown="1">
-
-### Look up a species while reading in Books {#books-title}
-
-Apple Books does not offer the same Share Sheet access when you select text. Add the **Lookup Species** Shortcut once, then select and copy a species name and run the Shortcut to see its translations.
+To look up a species from Books, add the **Lookup Species** Shortcut once. Select and copy the species name, then run the Shortcut.
 
 <a class="text-link" href="https://www.icloud.com/shortcuts/3dcca758ad0d40aaa2f4c8d2ef2ec471">Add the Lookup Species Shortcut</a>
 

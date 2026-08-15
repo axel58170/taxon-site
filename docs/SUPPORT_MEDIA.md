@@ -9,9 +9,11 @@ Add or replace a walkthrough only when motion explains a sequence that still
 feels unclear in the written steps. Do not regenerate an accurate walkthrough
 only because nearby copy changed.
 
-Each walkthrough should cover one recognisable task from start to finish. Keep
-setup, optional invocation methods, and troubleshooting in text rather than
-combining them into the animation.
+Each walkthrough should cover one recognisable interaction from start to
+finish. One Share Sheet walkthrough may illustrate several source contexts when
+the interaction is the same in each; do not create repetitive clips merely to
+show a different source app. Keep setup, optional invocation methods, and
+troubleshooting in text rather than combining them into the animation.
 
 ## Published stills
 
@@ -80,9 +82,10 @@ when the sequence remains legible.
 
 ## Next useful walkthroughs
 
-First recapture the selected-text and Merlin species-page Share Sheet flows with
-the Taxon Translate name. A **Lookup Species** walkthrough would then add a
-different invocation path. Its shot list should be:
+First capture one representative Share Sheet flow with the Taxon Translate name.
+Use it for the selected-text, Merlin, Wikipedia, and Visual Intelligence examples
+rather than publishing a separate clip for each source. A **Lookup Species**
+walkthrough would then add the distinct Shortcuts path. Its shot list should be:
 
 1. Select a species name in Books and tap **Copy**.
 2. Run **Lookup Species** using one representative invocation method.

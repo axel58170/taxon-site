@@ -13,6 +13,9 @@ interface used to reach it.
   transport into Taxon Translate.
 - In procedural instructions, use the exact iOS labels **Share** and **Share
   Sheet** when those steps are necessary. Explain the lookup outcome first.
+- A concise overview may group several contexts under **Using the Share Sheet**
+  when they follow the same interaction and separate descriptions would repeat
+  it. Keep detailed task-based headings on setup or support pages.
 - When Taxon Translate appears over another app, say that the person can view the
   names and then close the result to remain in or return to what they were
   doing. Do not imply that they permanently leave, transfer from, or “continue
@@ -53,8 +56,8 @@ interface used to reach it.
 Before publishing customer-facing text, check that:
 
 1. headings and feature labels state what the person can accomplish;
-2. Share Sheet, Shortcuts, Wikipedia, and Merlin are described as inputs or
-   contexts rather than the goal;
+2. Share Sheet and Shortcuts are used as grouping labels only when that makes
+   several input contexts easier to scan without repeating the same steps;
 3. the copy does not imply that an overlay removes the person from the source
    app;
 4. normal capability copy leads with the successful outcome and puts

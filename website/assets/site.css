@@ -105,11 +105,7 @@ nav a {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(17rem, 0.6fr);
-  align-items: center;
-  gap: clamp(2rem, 6vw, 5rem);
-  min-height: 37rem;
+  max-width: 52rem;
   padding-block: clamp(4rem, 9vw, 8rem);
 }
 
@@ -157,32 +153,8 @@ h3 {
   font-size: clamp(1.15rem, 2.5vw, 1.42rem);
 }
 
-.button {
-  display: inline-block;
-  padding: 0.78rem 1.1rem;
-  border-radius: 0.8rem;
-  background: var(--ink);
-  color: white;
-  font-weight: 750;
-  text-decoration: none;
-}
-
-.actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.8rem 1.1rem;
-}
-
 .text-link {
   font-weight: 750;
-}
-
-.hero-icon {
-  width: min(100%, 20rem);
-  justify-self: center;
-  border-radius: 24%;
-  box-shadow: var(--shadow);
 }
 
 .document {
@@ -202,14 +174,12 @@ h3 {
 .story-grid,
 .interface-section,
 .ways-section,
-.features-section,
 .beyond-birds {
   margin-block: clamp(4rem, 9vw, 8rem);
 }
 
 .section-copy h2,
 .workflow-copy h2,
-.features-heading h2,
 .beyond-birds h2 {
   margin-top: 0;
 }
@@ -297,53 +267,6 @@ h3 {
 .short-story p {
   color: var(--muted);
   font-size: clamp(1.02rem, 2vw, 1.15rem);
-}
-
-.features-section {
-  padding: clamp(2.5rem, 7vw, 5rem);
-  border: 1px solid var(--line);
-  border-radius: 1.75rem;
-  background: var(--surface);
-  box-shadow: var(--shadow);
-}
-
-.features-heading {
-  max-width: 46rem;
-}
-
-.features-heading > p:not(.eyebrow) {
-  color: var(--muted);
-  font-size: clamp(1.08rem, 2vw, 1.22rem);
-}
-
-.feature-list {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.feature-list li {
-  display: grid;
-  align-content: start;
-  gap: 0.55rem;
-  padding: 1.25rem;
-  border: 1px solid var(--line);
-  border-radius: 1rem;
-  background: var(--soft);
-}
-
-.feature-list strong {
-  color: var(--ink);
-  font-size: 1.04rem;
-}
-
-.feature-list span {
-  color: var(--muted);
-  font-size: 0.95rem;
-  line-height: 1.55;
 }
 
 .beyond-birds {
@@ -503,27 +426,11 @@ code {
   margin: 0;
 }
 
-@media (max-width: 64rem) {
-  .feature-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
 @media (max-width: 44rem) {
   .site-header,
   .site-footer {
     align-items: flex-start;
     flex-direction: column;
-  }
-
-  .hero {
-    grid-template-columns: 1fr;
-    min-height: auto;
-  }
-
-  .hero-icon {
-    width: 11rem;
-    justify-self: start;
   }
 
   .workflow-section,
@@ -549,9 +456,6 @@ code {
     order: 2;
   }
 
-  .feature-list {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (prefers-color-scheme: dark) {

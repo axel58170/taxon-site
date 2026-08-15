@@ -13,12 +13,7 @@ description: Taxon Translate shows the sourced names of animals, plants, and fun
 
 <p class="lede">Enter a common or scientific name and see what that animal, plant, or fungus is called in all your selected languages.</p>
 
-<div class="actions">
-  <a class="button" href="#app-interface">See Taxon Translate in action</a>
-</div>
-
   </div>
-  <img class="hero-icon" src="{{ '/assets/app-icon.png' | relative_url }}" alt="Taxon Translate app icon" width="320" height="320">
 </section>
 
 <section class="interface-section" id="app-interface" aria-labelledby="interface-title">
@@ -67,6 +62,15 @@ Choose Taxon Translate in the Share Sheet to:
 
 Taxon Translate shows the names in your selected languages in a pop-up over the other app.
 
+{% include motion-figure.html
+  class="feature-media share-sheet-media"
+  animation="/assets/support/share-wikipedia-page.gif"
+  animation_alt="Taxon Translate opening from the Share Sheet on a Dutch Wikipedia article about hazel and displaying its English, French, Dutch, and scientific names"
+  poster="/assets/support/share-wikipedia-page-poster.webp"
+  poster_alt="Taxon Translate displaying Hazel, Noisetier, Hazelaar, and Corylus avellana after a Wikipedia article was shared"
+  duration_ms="9000"
+%}
+
 <p class="note">Taxon Translate is not affiliated with or endorsed by Merlin Bird ID, eBird, or the Cornell Lab of Ornithology.</p>
 
 </article>
@@ -80,16 +84,6 @@ To look up a species from Books, add the **Lookup Species** Shortcut once. Selec
 
 </article>
   </div>
-</section>
-
-<section class="features-section" aria-label="Taxon Translate features">
-
-  <ul class="feature-list">
-    <li><strong>Set up your languages</strong><span>Select the languages you want to see and put them in the order you prefer.</span></li>
-    <li><strong>See the scientific name</strong><span>The scientific name is shown together with the translations.</span></li>
-    <li><strong>Find your recent searches again</strong><span>Species you look up from another app also appear in Recent Searches in Taxon Translate. You can return to them later without looking them up again.</span></li>
-    <li><strong>Use Shortcuts and Siri</strong><span>Use Shortcuts to look up a species, get a translation in one language, or show the translations in your selected languages. You can also run your Shortcuts with Siri.</span></li>
-  </ul>
 </section>
 
 <section class="beyond-birds" aria-labelledby="beyond-title" markdown="1">

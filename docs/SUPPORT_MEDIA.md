@@ -28,6 +28,11 @@ troubleshooting in text rather than combining them into the animation.
 - `website/assets/support/app-search-house-sparrow-poster.webp`: completed
   English, French, Dutch, and scientific-name result shown before playback and
   when motion is reduced.
+- `website/assets/support/share-wikipedia-page.gif`: English Share Sheet flow
+  from a public Dutch Wikipedia article to the multilingual hazel result.
+- `website/assets/support/share-wikipedia-page-poster.webp`: completed Hazel,
+  Noisetier, Hazelaar, and scientific-name result shown before playback and when
+  motion is reduced.
 
 The former Share Sheet captures showed the superseded Taxon Bridge name and were
 withdrawn together with their poster frames. Publish replacements only after
@@ -82,10 +87,10 @@ when the sequence remains legible.
 
 ## Next useful walkthroughs
 
-First capture one representative Share Sheet flow with the Taxon Translate name.
-Use it for the selected-text, Merlin, Wikipedia, and Visual Intelligence examples
-rather than publishing a separate clip for each source. A **Lookup Species**
-walkthrough would then add the distinct Shortcuts path. Its shot list should be:
+The homepage uses one representative Wikipedia Share Sheet flow for the
+selected-text, Merlin, Wikipedia, and Visual Intelligence examples rather than
+publishing a separate clip for each source. A **Lookup Species** walkthrough
+would add the distinct Shortcuts path. Its shot list should be:
 
 1. Select a species name in Books and tap **Copy**.
 2. Run **Lookup Species** using one representative invocation method.

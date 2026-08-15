@@ -31,20 +31,17 @@ description: Taxon Translate shows the sourced names of animals, plants, and fun
   <div class="workflow-section interface-showcase">
 <div class="workflow-copy" markdown="1">
 
-Know the English name **House Sparrow** and want to see what the same bird is called in French or Dutch? Search for it in Taxon Translate to see its names together with *Passer domesticus*, its scientific name.
-
-Enter any common or scientific name. Taxon Translate finds the matching animal, plant, or fungus and shows its recorded names in your selected languages alongside the scientific name.
+Want to know what a **House Sparrow** is called in French or Dutch? Enter any common or scientific name. Taxon Translate finds the matching animal, plant, or fungus and shows its names in the languages you selected.
 
 </div>
 
 {% include motion-figure.html
   class="feature-media interface-media"
   animation="/assets/support/app-search-house-sparrow.gif"
-  animation_alt="Animated Taxon Translate search for House Sparrow, followed by its English, French, Dutch, and scientific names"
+  animation_alt="Taxon Translate searching for House Sparrow and displaying House Sparrow, Moineau domestique, Huismus, and Passer domesticus"
   poster="/assets/support/app-search-house-sparrow-poster.webp"
   poster_alt="Taxon Translate showing House Sparrow, Moineau domestique, Huismus, and Passer domesticus"
   duration_ms="13000"
-  caption="Search for House Sparrow and see its names together: House Sparrow, Moineau domestique, Huismus, and Passer domesticus."
 %}
   </div>
 </section>

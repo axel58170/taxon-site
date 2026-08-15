@@ -113,6 +113,17 @@ class GeneratedSiteValidationTests(unittest.TestCase):
 
         self.assertEqual(sum("motion figure must contain" in error for error in errors), 2)
 
+    def test_rejects_unclosed_motion_figure(self) -> None:
+        homepage = self.site / "index.html"
+        homepage.write_text(
+            homepage.read_text(encoding="utf-8").replace("</figure>", "", 1),
+            encoding="utf-8",
+        )
+
+        errors = validate(self.site)
+
+        self.assertTrue(any("motion figure must be closed" in error for error in errors))
+
     def test_rejects_structural_closing_tag_rendered_as_code(self) -> None:
         homepage = self.site / "index.html"
         homepage.write_text(

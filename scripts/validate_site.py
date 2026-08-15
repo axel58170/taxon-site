@@ -89,6 +89,12 @@ class PageParser(HTMLParser):
         ):
             self.structure_errors.append("structural closing tag rendered as code")
 
+    def close(self) -> None:
+        super().close()
+        if self.open_figures:
+            self.structure_errors.append("motion figure must be closed")
+            self.open_figures.clear()
+
 
 def output_path_for_reference(
     site: Path, page: Path, reference: str, base_path: str = ""
@@ -119,6 +125,7 @@ def output_path_for_reference(
 def parse_page(path: Path) -> PageParser:
     parser = PageParser()
     parser.feed(path.read_text(encoding="utf-8"))
+    parser.close()
     return parser
 
 

@@ -12,6 +12,7 @@ document.querySelectorAll(".motion-control").forEach((button) => {
   const playLabel = button.dataset.playLabel || "Play animation";
   const stopLabel = button.dataset.stopLabel || "Stop animation";
   const replayLabel = button.dataset.replayLabel || "Play again";
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   let hasPlayed = false;
   let playbackGeneration = 0;
   let stopTimer;
@@ -55,6 +56,11 @@ document.querySelectorAll(".motion-control").forEach((button) => {
   };
 
   button.hidden = false;
+  reducedMotion.addEventListener("change", (event) => {
+    if (event.matches) {
+      showPoster();
+    }
+  });
   button.addEventListener("click", () => {
     if (button.dataset.playing === "true") {
       showPoster();

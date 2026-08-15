@@ -471,11 +471,13 @@ h3 {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .motion-demo {
+  .motion-demo,
+  .feature-media.motion-playing .motion-demo {
     display: none !important;
   }
 
-  .motion-fallback {
+  .motion-fallback,
+  .feature-media.motion-playing .motion-fallback {
     display: block !important;
   }
 

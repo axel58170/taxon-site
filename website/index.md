@@ -78,7 +78,9 @@ Taxon Translate shows the names in your selected languages in a pop-up over the 
 
 ### Using Shortcuts {#shortcuts-title}
 
-To look up a species from Books, add the **Lookup Species** Shortcut once. Select and copy the species name, then run the Shortcut.
+Books does not provide the same Share Sheet route for selected text. To find translations while reading in Books, add the **Lookup Species** Shortcut once. Select and copy the species name, then run the Shortcut.
+
+Shortcuts provide another way to find translations throughout iOS. You can also run them with Siri, although we have not yet tested that route.
 
 <a class="text-link" href="https://www.icloud.com/shortcuts/3dcca758ad0d40aaa2f4c8d2ef2ec471">Add the Lookup Species Shortcut</a>
 

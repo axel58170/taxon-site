@@ -25,10 +25,10 @@ class GeneratedSiteValidationTests(unittest.TestCase):
         (self.site / "beta-testing").mkdir()
         (self.site / "assets").mkdir()
         (self.site / "index.html").write_text(
-            '<main id="main"><a href="support/#which-languages-can-i-add">FAQ</a>'
+            '<main id="main"><a href="support/#which-languages-can-i-add">FAQ</a><figure>'
             '<img class="motion-demo" src="assets/demo.gif" alt="Animated steps">'
             '<img class="motion-fallback" src="assets/poster.webp" alt="Still result">'
-            '<button class="motion-control">Play animation</button></main>',
+            '<button class="motion-control">Play animation</button></figure></main>',
             encoding="utf-8",
         )
         (self.site / "privacy/index.html").write_text('<main id="main"></main>', encoding="utf-8")
@@ -54,10 +54,10 @@ class GeneratedSiteValidationTests(unittest.TestCase):
 
     def test_accepts_absolute_links_with_project_site_base_path(self) -> None:
         (self.site / "index.html").write_text(
-            '<main id="main"><a href="/taxon-site/support/#which-languages-can-i-add">FAQ</a>'
+            '<main id="main"><a href="/taxon-site/support/#which-languages-can-i-add">FAQ</a><figure>'
             '<img class="motion-demo" src="/taxon-site/assets/demo.gif" alt="Animated steps">'
             '<img class="motion-fallback" src="/taxon-site/assets/poster.webp" alt="Still result">'
-            '<button class="motion-control">Play animation</button></main>',
+            '<button class="motion-control">Play animation</button></figure></main>',
             encoding="utf-8",
         )
 
@@ -65,10 +65,10 @@ class GeneratedSiteValidationTests(unittest.TestCase):
 
     def test_rejects_absolute_links_outside_project_site_base_path(self) -> None:
         (self.site / "index.html").write_text(
-            '<main id="main"><a href="/support/#which-languages-can-i-add">FAQ</a>'
+            '<main id="main"><a href="/support/#which-languages-can-i-add">FAQ</a><figure>'
             '<img class="motion-demo" src="/assets/demo.gif" alt="Animated steps">'
             '<img class="motion-fallback" src="/assets/poster.webp" alt="Still result">'
-            '<button class="motion-control">Play animation</button></main>',
+            '<button class="motion-control">Play animation</button></figure></main>',
             encoding="utf-8",
         )
 
@@ -97,7 +97,21 @@ class GeneratedSiteValidationTests(unittest.TestCase):
 
         errors = validate(self.site)
 
-        self.assertTrue(any("motion demos and playback controls must be paired" in error for error in errors))
+        self.assertTrue(any("motion figure must contain" in error for error in errors))
+
+    def test_rejects_controls_paired_with_the_wrong_figure(self) -> None:
+        homepage = self.site / "index.html"
+        homepage.write_text(
+            '<main><figure><img class="motion-demo" src="assets/demo.gif" alt="Animated steps">'
+            '<img class="motion-fallback" src="assets/poster.webp" alt="Still result"></figure>'
+            '<figure><button class="motion-control">Play</button>'
+            '<button class="motion-control">Play again</button></figure></main>',
+            encoding="utf-8",
+        )
+
+        errors = validate(self.site)
+
+        self.assertEqual(sum("motion figure must contain" in error for error in errors), 2)
 
     def test_rejects_structural_closing_tag_rendered_as_code(self) -> None:
         homepage = self.site / "index.html"

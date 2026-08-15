@@ -37,11 +37,14 @@ class PageParser(HTMLParser):
         self.motion_demos: list[dict[str, str]] = []
         self.motion_fallbacks: list[dict[str, str]] = []
         self.motion_controls: list[dict[str, str]] = []
+        self.open_figures: list[dict[str, int]] = []
         self.open_code_blocks = 0
         self.structure_errors: list[str] = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         values = {key: value or "" for key, value in attrs}
+        if tag == "figure":
+            self.open_figures.append({"demos": 0, "fallbacks": 0, "controls": 0})
         if tag in {"code", "pre"}:
             self.open_code_blocks += 1
         if values.get("id"):
@@ -53,12 +56,30 @@ class PageParser(HTMLParser):
             classes = set(values.get("class", "").split())
             if "motion-demo" in classes:
                 self.motion_demos.append(values)
+                if self.open_figures:
+                    self.open_figures[-1]["demos"] += 1
+                else:
+                    self.structure_errors.append("motion demo must be inside a figure")
             if "motion-fallback" in classes:
                 self.motion_fallbacks.append(values)
+                if self.open_figures:
+                    self.open_figures[-1]["fallbacks"] += 1
+                else:
+                    self.structure_errors.append("motion fallback must be inside a figure")
         if tag == "button" and "motion-control" in set(values.get("class", "").split()):
             self.motion_controls.append(values)
+            if self.open_figures:
+                self.open_figures[-1]["controls"] += 1
+            else:
+                self.structure_errors.append("motion control must be inside a figure")
 
     def handle_endtag(self, tag: str) -> None:
+        if tag == "figure" and self.open_figures:
+            group = self.open_figures.pop()
+            if any(group.values()) and group != {"demos": 1, "fallbacks": 1, "controls": 1}:
+                self.structure_errors.append(
+                    "motion figure must contain one demo, one fallback, and one control"
+                )
         if tag in {"code", "pre"} and self.open_code_blocks:
             self.open_code_blocks -= 1
 
@@ -155,16 +176,6 @@ def validate(site: Path, base_path: str = "") -> list[str]:
                 if fragment not in target_parser.ids:
                     errors.append(f"{route}: missing link target: {reference}")
 
-        if len(parser.motion_demos) != len(parser.motion_fallbacks):
-            errors.append(
-                f"{route}: motion demos and fallbacks must be paired "
-                f"({len(parser.motion_demos)} demos, {len(parser.motion_fallbacks)} fallbacks)"
-            )
-        if len(parser.motion_demos) != len(parser.motion_controls):
-            errors.append(
-                f"{route}: motion demos and playback controls must be paired "
-                f"({len(parser.motion_demos)} demos, {len(parser.motion_controls)} controls)"
-            )
         for kind, images in (("demo", parser.motion_demos), ("fallback", parser.motion_fallbacks)):
             for image in images:
                 if not image.get("alt", "").strip():

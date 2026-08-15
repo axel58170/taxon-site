@@ -256,6 +256,19 @@ h3 {
   max-width: 41rem;
 }
 
+.interface-showcase {
+  margin-top: clamp(2rem, 5vw, 4rem);
+  padding: clamp(2rem, 6vw, 5rem);
+  border: 1px solid var(--line);
+  border-radius: 1.75rem;
+  background: var(--soft);
+}
+
+.interface-media {
+  width: min(100%, 24rem);
+  padding-top: 0;
+}
+
 .workflow-copy p:not(.eyebrow, .note) {
   color: var(--muted);
   font-size: clamp(1.08rem, 2vw, 1.24rem);

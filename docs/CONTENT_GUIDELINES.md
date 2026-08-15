@@ -62,3 +62,20 @@ Before publishing customer-facing text, check that:
 5. **resolve** appears only when quoting an existing interface label; and
 6. captions, alternative text, descriptions, privacy text, and testing
    instructions follow the same rules as the main page.
+
+## Localization inventory
+
+Treat all customer-facing website text as localizable, including text outside
+Markdown paragraphs. For the homepage, the inventory includes:
+
+- YAML front matter: browser `title` and metadata `description`;
+- hero category line, heading, explanatory copy, and action label;
+- interface-section eyebrow, heading, explanatory copy, media alternative text,
+  reduced-motion poster alternative text, and caption;
+- scenario and feature headings, paragraphs, notes, labels, and link text; and
+- shared layout text in `website/_layouts/default.html`, including the skip link,
+  brand accessibility label, navigation labels, and footer links.
+
+When a new customer-facing string is added in Markdown, HTML, YAML front matter,
+Liquid include parameters, an image description, or shared layout chrome, add its
+location to this inventory before publication.

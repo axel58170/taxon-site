@@ -14,12 +14,34 @@ description: Taxon Translate shows the sourced names of animals, plants, and fun
 <p class="lede">Enter a common or scientific name and see what that animal, plant, or fungus is called in all your selected languages.</p>
 
 <div class="actions">
-  <a class="button" href="mailto:taxon@axelgraff.fr?subject=Taxon%20Translate%20TestFlight">Ask about TestFlight</a>
-  <a class="text-link" href="{{ '/support/' | relative_url }}">Learn how it works</a>
+  <a class="button" href="#app-interface">See Taxon Translate in action</a>
 </div>
 
   </div>
   <img class="hero-icon" src="{{ '/assets/app-icon.png' | relative_url }}" alt="Taxon Translate app icon" width="320" height="320">
+</section>
+
+<section class="workflow-section interface-showcase" id="app-interface" aria-labelledby="interface-title">
+  <div class="workflow-copy" markdown="1">
+
+<p class="eyebrow">Search in the app</p>
+
+## Search once. See the names together. {#interface-title}
+
+Enter a common or scientific name. Taxon Translate finds the matching animal, plant, or fungus and shows its recorded names in your selected languages alongside the scientific name.
+
+Here, a search for **House Sparrow** brings together its English, French, Dutch, and scientific names.
+
+  </div>
+
+{% include motion-figure.html
+  class="feature-media interface-media"
+  animation="/assets/support/app-search-house-sparrow.gif"
+  animation_alt="Animated Taxon Translate search for House Sparrow, followed by its English, French, Dutch, and scientific names"
+  poster="/assets/support/app-search-house-sparrow-poster.webp"
+  poster_alt="Taxon Translate showing House Sparrow, Moineau domestique, Huismus, and Passer domesticus"
+  caption="Search for House Sparrow and see its names together: House Sparrow, Moineau domestique, Huismus, and Passer domesticus."
+%}
 </section>
 
 <section class="birding-story" aria-labelledby="birding-title">

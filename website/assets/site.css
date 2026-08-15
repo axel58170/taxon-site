@@ -200,6 +200,7 @@ h3 {
 
 .workflow-section,
 .story-grid,
+.interface-section,
 .ways-section,
 .features-section,
 .beyond-birds {
@@ -246,11 +247,14 @@ h3 {
 }
 
 .interface-showcase {
-  margin-top: clamp(2rem, 5vw, 4rem);
   padding: clamp(2rem, 6vw, 5rem);
   border: 1px solid var(--line);
   border-radius: 1.75rem;
   background: var(--soft);
+}
+
+.interface-section .interface-showcase {
+  margin-block: 1.5rem 0;
 }
 
 .workflow-copy p:not(.eyebrow, .note) {

@@ -99,6 +99,19 @@ class GeneratedSiteValidationTests(unittest.TestCase):
 
         self.assertTrue(any("motion demos and playback controls must be paired" in error for error in errors))
 
+    def test_rejects_section_nested_inside_article(self) -> None:
+        homepage = self.site / "index.html"
+        homepage.write_text(
+            homepage.read_text(encoding="utf-8").replace(
+                "</main>", "<article><section></section></article></main>"
+            ),
+            encoding="utf-8",
+        )
+
+        errors = validate(self.site)
+
+        self.assertTrue(any("section must not be nested inside article" in error for error in errors))
+
 
 if __name__ == "__main__":
     unittest.main()

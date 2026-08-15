@@ -37,9 +37,17 @@ class PageParser(HTMLParser):
         self.motion_demos: list[dict[str, str]] = []
         self.motion_fallbacks: list[dict[str, str]] = []
         self.motion_controls: list[dict[str, str]] = []
+        self.open_articles = 0
+        self.structure_errors: list[str] = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         values = {key: value or "" for key, value in attrs}
+        if tag == "section" and self.open_articles:
+            self.structure_errors.append("section must not be nested inside article")
+        if tag == "article":
+            if self.open_articles:
+                self.structure_errors.append("article must not be nested inside article")
+            self.open_articles += 1
         if values.get("id"):
             self.ids.add(values["id"])
         for attribute in ("href", "src"):
@@ -53,6 +61,10 @@ class PageParser(HTMLParser):
                 self.motion_fallbacks.append(values)
         if tag == "button" and "motion-control" in set(values.get("class", "").split()):
             self.motion_controls.append(values)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "article" and self.open_articles:
+            self.open_articles -= 1
 
 
 def output_path_for_reference(
@@ -112,6 +124,8 @@ def validate(site: Path, base_path: str = "") -> list[str]:
     ignored_schemes = {"http", "https", "mailto", "tel", "data"}
     for page, parser in list(pages.items()):
         route = page.relative_to(site)
+        for error in parser.structure_errors:
+            errors.append(f"{route}: invalid document structure: {error}")
         for attribute, reference in parser.references:
             parsed = urlsplit(reference)
             if parsed.scheme.lower() in ignored_schemes or reference.startswith("//"):

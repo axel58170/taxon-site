@@ -75,6 +75,8 @@ Markdown paragraphs. For the homepage, the inventory includes:
 - hero category line, heading, explanatory copy, and action label;
 - interface-section eyebrow, heading, explanatory copy, media alternative text,
   reduced-motion poster alternative text, playback-control labels, and caption;
+- Share Sheet walkthrough animation alternative text and reduced-motion poster
+  alternative text in the homepage motion-figure include;
 - scenario and feature headings, paragraphs, notes, labels, and link text; and
 - shared layout text in `website/_layouts/default.html`, including the skip link,
   brand accessibility label, navigation labels, and footer links.

@@ -13,12 +13,7 @@ description: Taxon Translate shows the sourced names of animals, plants, and fun
 
 <p class="lede">Enter a common or scientific name and see what that animal, plant, or fungus is called in all your selected languages.</p>
 
-<div class="actions">
-  <a class="button" href="#app-interface">See Taxon Translate in action</a>
-</div>
-
   </div>
-  <img class="hero-icon" src="{{ '/assets/app-icon.png' | relative_url }}" alt="Taxon Translate app icon" width="320" height="320">
 </section>
 
 <section class="interface-section" id="app-interface" aria-labelledby="interface-title">
@@ -58,14 +53,23 @@ Want to know what, say, a **House Sparrow** is called in, for example, French or
 
 ### Using the Share Sheet {#share-sheet-title}
 
-Choose Taxon Translate in the Share Sheet to:
+Find translations:
 
-- look up a species while reading;
-- look up a bird from Merlin;
-- look up a species from Wikipedia; or
-- look up a species with Visual Intelligence after opening its Wikipedia page.
+- while reading in Safari or another app;
+- while identifying a bird with Merlin Bird ID;
+- while reading about a species on Wikipedia; or
+- after identifying a species with Visual Intelligence and opening the linked Wikipedia page.
 
-Taxon Translate shows the names in your selected languages in a pop-up over the other app.
+Select a species name and share it to Taxon Translate. Close the result to continue where you left off.
+
+{% include motion-figure.html
+  class="feature-media share-sheet-media"
+  animation="/assets/support/share-selected-text-tufted-puffin.gif"
+  animation_alt="Macareux huppé and Kuifpapegaaiduiker appear after selecting Tufted Puffin in a Safari article, revealing Share, choosing Taxon Translate, and then closing the result to continue reading"
+  poster="/assets/support/share-selected-text-tufted-puffin-poster.webp"
+  poster_alt="Taxon Translate showing Tufted Puffin, Macareux huppé, Kuifpapegaaiduiker, and Fratercula cirrhata"
+  duration_ms="12170"
+%}
 
 <p class="note">Taxon Translate is not affiliated with or endorsed by Merlin Bird ID, eBird, or the Cornell Lab of Ornithology.</p>
 
@@ -74,32 +78,12 @@ Taxon Translate shows the names in your selected languages in a pop-up over the 
 
 ### Using Shortcuts {#shortcuts-title}
 
-To look up a species from Books, add the **Lookup Species** Shortcut once. Select and copy the species name, then run the Shortcut.
+Books does not provide the same Share Sheet route for selected text. To find translations while reading in Books, add the **Lookup Species** Shortcut once. Select and copy the species name, then run the Shortcut.
+
+Shortcuts provide another way to find translations throughout iOS and may be easier for some people. You can also run them with Siri, although we have not yet tested that route.
 
 <a class="text-link" href="https://www.icloud.com/shortcuts/3dcca758ad0d40aaa2f4c8d2ef2ec471">Add the Lookup Species Shortcut</a>
 
 </article>
   </div>
-</section>
-
-<section class="features-section" aria-label="Taxon Translate features">
-
-  <ul class="feature-list">
-    <li><strong>Set up your languages</strong><span>Select the languages you want to see and put them in the order you prefer.</span></li>
-    <li><strong>See the scientific name</strong><span>The scientific name is shown together with the translations.</span></li>
-    <li><strong>Find your recent searches again</strong><span>Species you look up from another app also appear in Recent Searches in Taxon Translate. You can return to them later without looking them up again.</span></li>
-    <li><strong>Use Shortcuts and Siri</strong><span>Use Shortcuts to look up a species, get a translation in one language, or show the translations in your selected languages. You can also run your Shortcuts with Siri.</span></li>
-  </ul>
-</section>
-
-<section class="beyond-birds" aria-labelledby="beyond-title" markdown="1">
-
-<p class="eyebrow">The whole living world</p>
-
-## More than birds {#beyond-title}
-
-Taxon Translate is not limited to birds. A plant on a gardening website, a mushroom mentioned in a recipe, or an unfamiliar animal in an article can all be looked up in exactly the same way.
-
-<p class="organism-examples" aria-label="Examples of organisms Taxon Translate can look up"><span>Plants</span><span>Fungi</span><span>Animals</span></p>
-
 </section>

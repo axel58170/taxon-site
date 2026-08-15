@@ -9,9 +9,11 @@ Add or replace a walkthrough only when motion explains a sequence that still
 feels unclear in the written steps. Do not regenerate an accurate walkthrough
 only because nearby copy changed.
 
-Each walkthrough should cover one recognisable task from start to finish. Keep
-setup, optional invocation methods, and troubleshooting in text rather than
-combining them into the animation.
+Each walkthrough should cover one recognisable interaction from start to
+finish. One Share Sheet walkthrough may illustrate several source contexts when
+the interaction is the same in each; do not create repetitive clips merely to
+show a different source app. Keep setup, optional invocation methods, and
+troubleshooting in text rather than combining them into the animation.
 
 ## Published stills
 
@@ -21,10 +23,16 @@ combining them into the animation.
 
 ## Published walkthroughs
 
-No animated walkthroughs are currently published. The former Share Sheet
-captures showed the superseded Taxon Bridge name and were withdrawn together
-with their poster frames. Publish replacements only after the complete Taxon
-Translate flows have been captured and reviewed using the workflow below.
+- `website/assets/support/app-search-house-sparrow.gif`: English House Sparrow
+  search from Recent Searches to the multilingual result.
+- `website/assets/support/app-search-house-sparrow-poster.webp`: completed
+  English, French, Dutch, and scientific-name result shown before playback and
+  when motion is reduced.
+
+The former Share Sheet captures showed the superseded Taxon Bridge name and were
+withdrawn together with their poster frames. Publish replacements only after
+the complete Taxon Translate flows have been captured and reviewed using the
+workflow below.
 
 The captures must obscure suggested contacts, account information, location,
 notifications, browsing history, and other personal information. Keep clips
@@ -46,8 +54,8 @@ beside the Merlin demonstration.
    briefly at the start, after important taps, and on the final result.
 4. Trim and redact the recording before it enters the repository. Watch the
    complete redacted source at full size and frame by frame around transitions.
-5. Generate a review GIF and reduced-motion poster outside the published asset
-   directory:
+5. Generate a single-play review GIF and reduced-motion poster outside the
+   published asset directory:
 
    ```sh
    scripts/prepare_support_media.sh \
@@ -66,15 +74,18 @@ beside the Merlin demonstration.
    alternative text and caption, build the site, and perform a rendered-site
    review. Keep raw recordings and intermediate frames out of Git.
 
-The preparation script targets 402 pixels wide, 6 frames per second, and a
-1.5 MB GIF limit. If it exceeds the limit, shorten idle time first; reduce
-dimensions or frame rate only when the sequence remains legible.
+The preparation script targets 402 pixels wide, 6 frames per second, no
+automatic looping, and a 1.5 MB GIF limit. Published walkthroughs show their
+poster by default and provide controls to play one pass or stop it. If a GIF
+exceeds the limit, shorten idle time first; reduce dimensions or frame rate only
+when the sequence remains legible.
 
 ## Next useful walkthroughs
 
-First recapture the selected-text and Merlin species-page Share Sheet flows with
-the Taxon Translate name. A **Lookup Species** walkthrough would then add a
-different invocation path. Its shot list should be:
+First capture one representative Share Sheet flow with the Taxon Translate name.
+Use it for the selected-text, Merlin, Wikipedia, and Visual Intelligence examples
+rather than publishing a separate clip for each source. A **Lookup Species**
+walkthrough would then add the distinct Shortcuts path. Its shot list should be:
 
 1. Select a species name in Books and tap **Copy**.
 2. Run **Lookup Species** using one representative invocation method.

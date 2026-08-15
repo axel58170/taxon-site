@@ -38,8 +38,9 @@ Name the thing the person wants to accomplish:
 
 > Look up a species while reading.
 
-Do not frame the feature as a “Share Sheet workflow.” Mention **Share Sheet**
-only when the reader needs that interface label to perform a step.
+Do not frame the product itself as a “Share Sheet workflow.” A short overview
+may use **Using the Share Sheet** to group contexts that share the same steps;
+use task-based headings for detailed instructions.
 
 Use the real-world object for the goal: **species, bird, animal, plant,** or
 **fungus**. Use **name** for text the person encounters, enters, or selects:

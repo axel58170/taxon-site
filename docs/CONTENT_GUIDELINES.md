@@ -13,6 +13,9 @@ interface used to reach it.
   transport into Taxon Translate.
 - In procedural instructions, use the exact iOS labels **Share** and **Share
   Sheet** when those steps are necessary. Explain the lookup outcome first.
+- A concise overview may group several contexts under **Using the Share Sheet**
+  when they follow the same interaction and separate descriptions would repeat
+  it. Keep detailed task-based headings on setup or support pages.
 - When Taxon Translate appears over another app, say that the person can view the
   names and then close the result to remain in or return to what they were
   doing. Do not imply that they permanently leave, transfer from, or “continue
@@ -53,8 +56,8 @@ interface used to reach it.
 Before publishing customer-facing text, check that:
 
 1. headings and feature labels state what the person can accomplish;
-2. Share Sheet, Shortcuts, Wikipedia, and Merlin are described as inputs or
-   contexts rather than the goal;
+2. Share Sheet and Shortcuts are used as grouping labels only when that makes
+   several input contexts easier to scan without repeating the same steps;
 3. the copy does not imply that an overlay removes the person from the source
    app;
 4. normal capability copy leads with the successful outcome and puts
@@ -62,3 +65,20 @@ Before publishing customer-facing text, check that:
 5. **resolve** appears only when quoting an existing interface label; and
 6. captions, alternative text, descriptions, privacy text, and testing
    instructions follow the same rules as the main page.
+
+## Localization inventory
+
+Treat all customer-facing website text as localizable, including text outside
+Markdown paragraphs. For the homepage, the inventory includes:
+
+- YAML front matter: browser `title` and metadata `description`;
+- hero category line, heading, explanatory copy, and action label;
+- interface-section eyebrow, heading, explanatory copy, media alternative text,
+  reduced-motion poster alternative text, playback-control labels, and caption;
+- scenario and feature headings, paragraphs, notes, labels, and link text; and
+- shared layout text in `website/_layouts/default.html`, including the skip link,
+  brand accessibility label, navigation labels, and footer links.
+
+When a new customer-facing string is added in Markdown, HTML, YAML front matter,
+Liquid include parameters, an image description, or shared layout chrome, add its
+location to this inventory before publication.

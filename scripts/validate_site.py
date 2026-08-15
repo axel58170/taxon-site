@@ -36,6 +36,7 @@ class PageParser(HTMLParser):
         self.references: list[tuple[str, str]] = []
         self.motion_demos: list[dict[str, str]] = []
         self.motion_fallbacks: list[dict[str, str]] = []
+        self.motion_replays: list[dict[str, str]] = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         values = {key: value or "" for key, value in attrs}
@@ -50,6 +51,8 @@ class PageParser(HTMLParser):
                 self.motion_demos.append(values)
             if "motion-fallback" in classes:
                 self.motion_fallbacks.append(values)
+        if tag == "button" and "motion-replay" in set(values.get("class", "").split()):
+            self.motion_replays.append(values)
 
 
 def output_path_for_reference(
@@ -140,6 +143,11 @@ def validate(site: Path, base_path: str = "") -> list[str]:
             errors.append(
                 f"{route}: motion demos and fallbacks must be paired "
                 f"({len(parser.motion_demos)} demos, {len(parser.motion_fallbacks)} fallbacks)"
+            )
+        if len(parser.motion_demos) != len(parser.motion_replays):
+            errors.append(
+                f"{route}: motion demos and replay controls must be paired "
+                f"({len(parser.motion_demos)} demos, {len(parser.motion_replays)} controls)"
             )
         for kind, images in (("demo", parser.motion_demos), ("fallback", parser.motion_fallbacks)):
             for image in images:

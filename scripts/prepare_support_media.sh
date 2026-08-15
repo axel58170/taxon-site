@@ -45,6 +45,7 @@ trap cleanup EXIT
 ffmpeg -hide_banner -loglevel error -y \
   -i "$input_video" \
   -filter_complex "fps=6,scale=402:-2:flags=lanczos,split[frames][palette_source];[palette_source]palettegen=max_colors=128:stats_mode=diff[palette];[frames][palette]paletteuse=dither=bayer:bayer_scale=3:diff_mode=rectangle" \
+  -loop -1 \
   "$gif_output"
 
 ffmpeg -hide_banner -loglevel error -y \

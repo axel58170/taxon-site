@@ -46,8 +46,8 @@ beside the Merlin demonstration.
    briefly at the start, after important taps, and on the final result.
 4. Trim and redact the recording before it enters the repository. Watch the
    complete redacted source at full size and frame by frame around transitions.
-5. Generate a review GIF and reduced-motion poster outside the published asset
-   directory:
+5. Generate a single-play review GIF and reduced-motion poster outside the
+   published asset directory:
 
    ```sh
    scripts/prepare_support_media.sh \
@@ -66,9 +66,10 @@ beside the Merlin demonstration.
    alternative text and caption, build the site, and perform a rendered-site
    review. Keep raw recordings and intermediate frames out of Git.
 
-The preparation script targets 402 pixels wide, 6 frames per second, and a
-1.5 MB GIF limit. If it exceeds the limit, shorten idle time first; reduce
-dimensions or frame rate only when the sequence remains legible.
+The preparation script targets 402 pixels wide, 6 frames per second, no
+automatic looping, and a 1.5 MB GIF limit. If it exceeds the limit, shorten idle
+time first; reduce dimensions or frame rate only when the sequence remains
+legible.
 
 ## Next useful walkthroughs
 

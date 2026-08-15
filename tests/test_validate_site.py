@@ -112,6 +112,19 @@ class GeneratedSiteValidationTests(unittest.TestCase):
 
         self.assertTrue(any("section must not be nested inside article" in error for error in errors))
 
+    def test_rejects_structural_closing_tag_rendered_as_code(self) -> None:
+        homepage = self.site / "index.html"
+        homepage.write_text(
+            homepage.read_text(encoding="utf-8").replace(
+                "</main>", "<pre><code>&lt;/section&gt;</code></pre></main>"
+            ),
+            encoding="utf-8",
+        )
+
+        errors = validate(self.site)
+
+        self.assertTrue(any("structural closing tag rendered as code" in error for error in errors))
+
 
 if __name__ == "__main__":
     unittest.main()

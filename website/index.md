@@ -29,13 +29,13 @@ description: Taxon Translate shows the sourced names of animals, plants, and fun
   </div>
 
   <div class="workflow-section interface-showcase">
-    <div class="workflow-copy" markdown="1">
+<div class="workflow-copy" markdown="1">
 
 Know the English name **House Sparrow** and want to see what the same bird is called in French or Dutch? Search for it in Taxon Translate to see its names together with *Passer domesticus*, its scientific name.
 
 Enter any common or scientific name. Taxon Translate finds the matching animal, plant, or fungus and shows its recorded names in your selected languages alongside the scientific name.
 
-    </div>
+</div>
 
 {% include motion-figure.html
   class="feature-media interface-media"

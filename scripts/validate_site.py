@@ -38,6 +38,7 @@ class PageParser(HTMLParser):
         self.motion_fallbacks: list[dict[str, str]] = []
         self.motion_controls: list[dict[str, str]] = []
         self.open_articles = 0
+        self.open_code_blocks = 0
         self.structure_errors: list[str] = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
@@ -48,6 +49,8 @@ class PageParser(HTMLParser):
             if self.open_articles:
                 self.structure_errors.append("article must not be nested inside article")
             self.open_articles += 1
+        if tag in {"code", "pre"}:
+            self.open_code_blocks += 1
         if values.get("id"):
             self.ids.add(values["id"])
         for attribute in ("href", "src"):
@@ -65,6 +68,14 @@ class PageParser(HTMLParser):
     def handle_endtag(self, tag: str) -> None:
         if tag == "article" and self.open_articles:
             self.open_articles -= 1
+        if tag in {"code", "pre"} and self.open_code_blocks:
+            self.open_code_blocks -= 1
+
+    def handle_data(self, data: str) -> None:
+        if self.open_code_blocks and any(
+            marker in data for marker in ("</article>", "</div>", "</section>")
+        ):
+            self.structure_errors.append("structural closing tag rendered as code")
 
 
 def output_path_for_reference(

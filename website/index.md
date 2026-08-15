@@ -68,7 +68,7 @@ Select a species name and share it to Taxon Translate. Close the result to conti
   animation_alt="Macareux huppé and Kuifpapegaaiduiker appear after selecting Tufted Puffin in a Safari article, revealing Share, choosing Taxon Translate, and then closing the result to continue reading"
   poster="/assets/support/share-selected-text-tufted-puffin-poster.webp"
   poster_alt="Taxon Translate showing Tufted Puffin, Macareux huppé, Kuifpapegaaiduiker, and Fratercula cirrhata"
-  duration_ms="25500"
+  duration_ms="12170"
 %}
 
 <p class="note">Taxon Translate is not affiliated with or endorsed by Merlin Bird ID, eBird, or the Cornell Lab of Ornithology.</p>

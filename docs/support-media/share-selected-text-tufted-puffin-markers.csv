@@ -1,0 +1,6 @@
+marker,phase,start,duration,center_x,center_y,radius_x,radius_y,stroke,fill,stroke_width
+more-actions,compact-menu,0.55,0.35,323,618,18,18,#b74b40,#b74b4030,3
+share,expanded-menu,0.75,0.40,138,607,22,18,#b74b40,#b74b4030,3
+taxon-translate,share-sheet,0.55,0.40,158,637,26,26,#b74b40,#b74b4030,3
+translations,result,0.15,2.20,270,313,100,67,#b74b40,#00000000,3
+close,close,0.00,0.25,354,112,28,22,#b74b40,#b74b4030,3

@@ -73,7 +73,29 @@ beside the Merlin demonstration.
    ```
 
    The third argument is the poster timestamp in seconds. Choose a frame that
-   communicates the result without requiring the animation.
+   communicates the result without requiring the animation. When a recording
+   contains long pauses, add a timeline as the optional fifth argument:
+
+   ```sh
+   scripts/prepare_support_media.sh \
+     /path/to/redacted-recording.mov \
+     share-selected-text-tufted-puffin \
+     8.0 \
+     /tmp/taxon-support-media \
+     docs/support-media/share-selected-text-tufted-puffin.csv \
+     /path/to/clean-opening.png \
+     2.0 \
+     docs/support-media/share-selected-text-tufted-puffin-markers.csv
+   ```
+
+   Each timeline row names a phase and declares its source start, source end,
+   and intended output duration in seconds. This keeps editorial timing
+   reviewable instead of encoding it as repeated, visually identical frames.
+   The optional opening image and duration add a clean establishing shot before
+   interactions begin; use a frame captured from the same device, page, and
+   viewport as the recording. The optional marker file places adjustable ellipses
+   on the final 402×874 canvas. Marker timing is relative to a named phase, so
+   changing a phase's source range does not silently move its visual cue.
 6. Review both outputs at their rendered desktop and mobile sizes. Confirm that
    labels remain legible, taps are understandable, the sequence has no private
    frames, and the poster matches the final workflow.

@@ -60,15 +60,15 @@ Find translations:
 - while reading about a species on Wikipedia; or
 - after identifying a species with Visual Intelligence and opening the linked Wikipedia page.
 
-Taxon Translate shows the names in your selected languages in a pop-up over the other app.
+Select a species name and share it to Taxon Translate. Close the result to continue where you left off.
 
 {% include motion-figure.html
   class="feature-media share-sheet-media"
-  animation="/assets/support/share-wikipedia-page.gif"
-  animation_alt="Hazel’s English, French, Dutch, and scientific names appear in Taxon Translate after choosing Share from an English Wikipedia article and selecting Taxon Translate in the Share Sheet"
-  poster="/assets/support/share-wikipedia-page-poster.webp"
-  poster_alt="Taxon Translate showing Hazel, Noisetier, Hazelaar, and Corylus avellana after a lookup from Wikipedia"
-  duration_ms="10500"
+  animation="/assets/support/share-selected-text-tufted-puffin.gif"
+  animation_alt="Macareux huppé and Kuifpapegaaiduiker appear after selecting Tufted Puffin in a Safari article, revealing Share, choosing Taxon Translate, and then closing the result to continue reading"
+  poster="/assets/support/share-selected-text-tufted-puffin-poster.webp"
+  poster_alt="Taxon Translate showing Tufted Puffin, Macareux huppé, Kuifpapegaaiduiker, and Fratercula cirrhata"
+  duration_ms="25500"
 %}
 
 <p class="note">Taxon Translate is not affiliated with or endorsed by Merlin Bird ID, eBird, or the Cornell Lab of Ornithology.</p>
@@ -80,7 +80,7 @@ Taxon Translate shows the names in your selected languages in a pop-up over the 
 
 Books does not provide the same Share Sheet route for selected text. To find translations while reading in Books, add the **Lookup Species** Shortcut once. Select and copy the species name, then run the Shortcut.
 
-Shortcuts provide another way to find translations throughout iOS. You can also run them with Siri, although we have not yet tested that route.
+Shortcuts provide another way to find translations throughout iOS and may be easier for some people. You can also run them with Siri, although we have not yet tested that route.
 
 <a class="text-link" href="https://www.icloud.com/shortcuts/3dcca758ad0d40aaa2f4c8d2ef2ec471">Add the Lookup Species Shortcut</a>
 

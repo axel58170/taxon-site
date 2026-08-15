@@ -28,12 +28,13 @@ troubleshooting in text rather than combining them into the animation.
 - `website/assets/support/app-search-house-sparrow-poster.webp`: completed
   English, French, Dutch, and scientific-name result shown before playback and
   when motion is reduced.
-- `website/assets/support/share-wikipedia-page.gif`: English Share Sheet flow
-  from a public English Wikipedia article to the multilingual hazel result,
-  with visible markers on the Safari More, Share, and Taxon Translate taps.
-- `website/assets/support/share-wikipedia-page-poster.webp`: completed Hazel,
-  Noisetier, Hazelaar, and scientific-name result shown before playback and when
-  motion is reduced.
+- `website/assets/support/share-selected-text-tufted-puffin.gif`: English
+  selected-text flow from a public Audubon article to the multilingual Tufted
+  Puffin result and back to the article, with visible markers on the menu,
+  Share, Taxon Translate, and Close taps.
+- `website/assets/support/share-selected-text-tufted-puffin-poster.webp`:
+  completed Tufted Puffin, Macareux huppé, Kuifpapegaaiduiker, and
+  scientific-name result shown before playback and when motion is reduced.
 
 The former Share Sheet captures showed the superseded Taxon Bridge name and were
 withdrawn together with their poster frames. Publish replacements only after
@@ -88,7 +89,7 @@ when the sequence remains legible.
 
 ## Next useful walkthroughs
 
-The homepage uses one representative Wikipedia Share Sheet flow for the
+The homepage uses one representative Safari selected-text Share Sheet flow for the
 selected-text, Merlin, Wikipedia, and Visual Intelligence examples rather than
 publishing a separate clip for each source. A **Lookup Species** walkthrough
 would add the distinct Shortcuts path. Its shot list should be:
